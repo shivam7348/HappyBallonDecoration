@@ -1,9 +1,18 @@
 import React from 'react'
+import AutoSlider from '../components/AutoSlider';
+import BalloonDecoration from '../components/BalloonDecoration';
+import ServiceCards from '../components/ServiceCards';
+import OurServicesCards from '../components/OurServicesCards';
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <AutoSlider />
+      <BalloonDecoration />
+      <OurServicesCards />
+      <ServiceCards />
+    </>
+  );
 }
 
 export default Home

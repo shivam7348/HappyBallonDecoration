@@ -1,20 +1,11 @@
 import React from 'react'
-import DateTimeDisplay from './Topheader/Topheader'
-import Header from './Topheader/Topheader'
-import MainHeader from './Topheader/MainHeader'
-import AutoSlider from './components/AutoSlider';
-import ServiceCards from './components/ServiceCards';
-import BalloonDecoration from './components/BalloonDecoration';
-import OurServicesCards from './components/OurServicesCards';
+import { RouterProvider } from 'react-router-dom';
+import router from '../router';
+
 function App() {
   return (
     <>
-      <Header />
-      <MainHeader />
-      <AutoSlider />
-      <ServiceCards />
-      <BalloonDecoration />
-      <OurServicesCards />
+     <RouterProvider router={router} />
     </>
   );
 }
