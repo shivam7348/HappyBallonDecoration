@@ -36,9 +36,21 @@ const AutoSlider = () => {
     setCurrentIndex(index);
   };
 
+  const goToPreviousSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
-    <div className="w-full h-screen flex items-center justify-center">
-      <div className="w-full max-w-11xl mx-auto px-4">
+    <div className="w-full  flex items-center justify-center">
+      <div className="w-full max-w-11xl ">
         {/* Main slider container */}
         <div className="relative h-[600px] overflow-hidden rounded-lg">
           {/* Slides */}
@@ -61,6 +73,48 @@ const AutoSlider = () => {
               ))}
             </div>
           </div>
+
+          {/* Navigation arrows */}
+          <button
+            onClick={goToPreviousSlide}
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-90 p-2 rounded-full hover:bg-opacity-75 transition-opacity duration-300"
+            aria-label="Previous slide"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            onClick={goToNextSlide}
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-opacity duration-300"
+            aria-label="Next slide"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
 
           {/* Navigation dots */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
