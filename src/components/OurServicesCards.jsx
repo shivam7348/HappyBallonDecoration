@@ -286,13 +286,13 @@ const OurServicesCards = () => {
 
 
   return (
-    <div className="  px-4 py-8 ">
+    <div className="container mx-auto px-4 py-8">
       <div>
         <h3 className="text-4xl font-bold text-center text-red-400 mb-6">
           OUR SERVICES
         </h3>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 gap-6 mx-22">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-20">
         {services.map((service) => (
           <div
             key={service.id}
