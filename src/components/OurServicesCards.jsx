@@ -4,93 +4,93 @@ const OurServicesCards = () => {
   const services = [
     {
       id: 1,
-      name: "Birthday Decoration",
+      name: "Baby Shower",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/3.jpg",
     },
     {
       id: 2,
-      name: "Wedding Decoration",
+      name: "Birthday Decoration",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/2-1.jpg",
     },
     {
       id: 3,
-      name: "Baby Shower",
+      name: "Anniversery Decorations",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-3.jpg",
     },
     {
       id: 4,
-      name: "Corporate Events",
+      name: "Welcome Baby Decorations",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-3.jpg",
     },
     {
       id: 5,
-      name: "Anniversary Decoration",
+      name: "Happy New Year",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-4.jpg",
     },
     {
       id: 6,
-      name: "Theme Party",
+      name: "Retirement Decoration",
       image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-4.jpg",
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/2-4.jpg",
     },
     {
       id: 7,
-      name: "Graduation Party",
+      name: "Hallowen Decoration",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/3-4.jpg",
     },
     {
       id: 8,
-      name: "Engagement Decoration",
+      name: "Christmas",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-5.jpg",
     },
     {
       id: 9,
-      name: "Retirement Party",
+      name: "Diwali",
       image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-5.jpg",
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/2-5.jpg",
     },
     {
       id: 10,
-      name: "Bridal Shower",
+      name: "Happy Holi",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/3-5.jpg",
     },
     {
       id: 11,
-      name: "Product Launch",
+      name: "Proposal decoration",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-6.jpg",
     },
     {
       id: 12,
-      name: "Festival Decoration",
+      name: "Mehndi ",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/choudhury-5.jpeg",
     },
     {
       id: 13,
-      name: "Charity Event",
+      name: "Wedding ",
       image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/81Pnx8djXlL-2048x2048.jpg",
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/2-8.jpg",
     },
     {
       id: 14,
-      name: "School Event",
+      name: "First Night Decoration",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/81Pnx8djXlL-2048x2048.jpg",
     },
     {
       id: 15,
-      name: "Community Gathering",
+      name: "Enagagemant",
       image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/f5e2d29196fdbe769b8b5da1f50d445f.jpg",
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-8.jpg",
     },
     {
       id: 16,
@@ -100,54 +100,90 @@ const OurServicesCards = () => {
     },
     {
       id: 17,
-      name: "Farewell Party",
+      name: "Naming Ceremony ",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/1672057309_2577452571.webp",
     },
     {
       id: 18,
-      name: "Welcome Party",
+      name: "Annaprashan Ceremony",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/premium-rosette-pack-silver-valentine-decoration-items-for-room-367766_533x.webp",
     },
     {
       id: 19,
-      name: "Cocktail Party",
+      name: "Baptism Ceremony ",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/2-10.jpg",
     },
     {
       id: 20,
-      name: "Gala Event",
+      name: "Janmashtami",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-12.jpg",
     },
     {
       id: 21,
-      name: "Networking Event",
+      name: "Lohri ",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-13.jpg",
     },
     {
       id: 22,
-      name: "Award Ceremony",
+      name: "Valentine Day ",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2023/12/choudhury-10-1.jpeg",
     },
     {
       id: 23,
-      name: "Exhibition",
+      name: "DJ Setup",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2023/12/choudhury-11.jpeg",
     },
     {
       id: 24,
-      name: "Workshop",
+      name: "Corpaorate Decoration",
       image:
         "https://choudharydecoratorsncr.com/wp-content/uploads/2023/12/choudhury-2.jpeg",
     },
-   
+    {
+      id: 25,
+      name: "Showroom Decoration",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-9.jpg",
+    },
+    {
+      id: 26,
+      name: "Magic Show Decoration",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/2-10.jpg",
+    },
+    {
+      id: 27,
+      name: "Car Decoration",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-12.jpg",
+    },
+    {
+      id: 28,
+      name: " Flower Decoration",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/1-13.jpg",
+    },
+    {
+      id: 29,
+      name: "Fog Matka ",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2023/12/choudhury-10-1.jpeg",
+    },
+    {
+      id: 30,
+      name: "Grand Opening",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2023/12/choudhury-2.jpeg",
+    },
   ];
+
 
   return (
     <div className=" mx-30 px-4 py-8 ">
