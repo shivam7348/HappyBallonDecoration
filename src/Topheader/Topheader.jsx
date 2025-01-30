@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Bell, Settings, User } from "lucide-react";
+import { Instagram, Youtube, Facebook, CircleFadingPlus } from "lucide-react";
 
 const Header = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -17,15 +17,16 @@ const Header = () => {
 
   return (
     <header className="bg-pink-800 text-white p-4">
-      <div className="flex items-center justify-end space-x-4">
+      <div className="flex items-center justify-end space-x-4 mr-10">
         {/* Date and Time */}
         <span>{formattedDate}</span>
         <span>{formattedTime}</span>
 
         {/* Icons */}
-        <Bell className="h-5 w-5 cursor-pointer hover:text-gray-400" />
-        <Settings className="h-5 w-5 cursor-pointer hover:text-gray-400" />
-        <User className="h-5 w-5 cursor-pointer hover:text-gray-400" />
+        <Instagram className="h-5 w-5 cursor-pointer hover:text-gray-400" />
+        <Youtube className="h-5 w-5 cursor-pointer hover:text-gray-400" />
+        <Facebook className="h-5 w-5 cursor-pointer hover:text-gray-400" />
+        <CircleFadingPlus className="h-5 w-5 cursor-pointer hover:text-gray-400" />
       </div>
     </header>
   );

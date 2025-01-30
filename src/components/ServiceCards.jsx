@@ -5,32 +5,38 @@ const ServiceCards = () => {
     {
       id: 1,
       name: "Birthday Decoration",
-      image: "/api/placeholder/400/300",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Birthday-min.jpg",
     },
     {
       id: 2,
       name: "Wedding Decoration",
-      image: "/api/placeholder/400/300",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Engagement-min.jpg",
     },
     {
       id: 3,
       name: "Baby Shower",
-      image: "/api/placeholder/400/300",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Annaprashan-min.jpg",
     },
     {
       id: 4,
       name: "Corporate Events",
-      image: "/api/placeholder/400/300",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Anniversary-min.jpg",
     },
     {
       id: 5,
       name: "Anniversary Decoration",
-      image: "/api/placeholder/400/300",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Wedding-min.jpg",
     },
     {
       id: 6,
       name: "Theme Party",
-      image: "/api/placeholder/400/300",
+      image:
+        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Engagement-min.jpg",
     },
   ];
 
