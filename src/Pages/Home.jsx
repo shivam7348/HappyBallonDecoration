@@ -8,9 +8,9 @@ function Home() {
   return (
     <>
       <AutoSlider />
+      <ServiceCards />
       <BalloonDecoration />
       <OurServicesCards />
-      <ServiceCards />
     </>
   );
 }

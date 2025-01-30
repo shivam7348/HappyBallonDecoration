@@ -7,10 +7,6 @@ import About from './src/Pages/About'
 import Products from './src/Pages/Products'
 import Services from './src/Pages/Services'
 
-
-
-
-
 const router = createBrowserRouter([
   {
     path: "/",

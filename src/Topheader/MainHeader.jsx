@@ -14,7 +14,7 @@ const MainHeader = () => {
           <nav>
             <ul className="flex space-x-6 text-gray-700 font-semibold mr-13 text-lg">
               <li>
-                <Link to="/" className="hover:text-blue-500">
+                <Link to="/" className="hover:text-bg-[var(--glsr-red)]">
                   Home
                 </Link>
               </li>
