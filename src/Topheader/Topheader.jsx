@@ -16,17 +16,17 @@ const Header = () => {
   const formattedTime = currentTime.toLocaleTimeString();
 
   return (
-    <header className="bg-pink-800 text-white p-4">
+    <header className="bg-[var(--glsr-red)] text-white p-4">
       <div className="flex items-center justify-end space-x-4 mr-10">
         {/* Date and Time */}
         <span>{formattedDate}</span>
         <span>{formattedTime}</span>
 
         {/* Icons */}
-        <Instagram className="h-5 w-5 cursor-pointer hover:text-gray-400" />
-        <Youtube className="h-5 w-5 cursor-pointer hover:text-gray-400" />
-        <Facebook className="h-5 w-5 cursor-pointer hover:text-gray-400" />
-        <CircleFadingPlus className="h-5 w-5 cursor-pointer hover:text-gray-400" />
+        <Instagram className="h-4 w-5 cursor-pointer hover:text-gray-400" />
+        <Youtube className="h-4 w-5 cursor-pointer hover:text-gray-400" />
+        <Facebook className="h-4 w-5 cursor-pointer hover:text-gray-400" />
+        <CircleFadingPlus className="h-4 w-5 cursor-pointer hover:text-gray-400" />
       </div>
     </header>
   );

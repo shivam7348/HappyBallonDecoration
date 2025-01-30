@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+:root {
+  --glsr-red: #ff376c;
+  /* Fixed the hex code */
+}
