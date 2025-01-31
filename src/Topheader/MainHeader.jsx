@@ -21,7 +21,7 @@ const MainHeader = () => {
             <img
               src={logo}
               alt="Company Logo"
-              className=" h-1   sm:h-16" // Smaller size on mobile, larger on larger screens
+              className=" sm:h-16" // Smaller size on mobile, larger on larger screens
             />
           </div>
 

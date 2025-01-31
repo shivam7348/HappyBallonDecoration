@@ -4,7 +4,7 @@ const BalloonDecoration = () => {
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto my-8">
       <h1 className="text-4xl font-bold text-center text-red-400 mb-6">
-        Balloon Decoration Services Near Me in Your Ghaziabad
+       Happy  Balloon Decoration Services Near Me in Your Ghaziabad
       </h1>
       <p className="text-lg text-gray-700 mb-4 font-bold text-center">
         Welcome to Happy Balloon Decoration – your ultimate destination for
