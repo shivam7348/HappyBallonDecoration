@@ -4,16 +4,12 @@ import image2 from "../assets/weeding.png";
 import image3 from "../assets/birthday.png";
 import image4 from "../assets/corporateEvents.png";
 
-
-
 const AutoSlider = () => {
   const slides = [
     { url: image1 },
-   {url: image2},
-   {url: image3},
-   {url: image4},
-
-   
+    { url: image2 },
+    { url: image3 },
+    { url: image4 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
