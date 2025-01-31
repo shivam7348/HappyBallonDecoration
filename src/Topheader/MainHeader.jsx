@@ -21,7 +21,11 @@ const MainHeader = () => {
       <header className="w-full bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div>
-            <img src={logo} alt="Company Logo" className="h-16 w-auto" />
+            <img
+              src={logo}
+              alt="Company Logo"
+              className="h-12 w-auto sm:h-16" // Smaller size on mobile, larger on larger screens
+            />
           </div>
 
           <button
