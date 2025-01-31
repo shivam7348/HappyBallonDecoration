@@ -6,9 +6,13 @@ const OurServicesCards = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Heading */}
       <div>
-        <h3 className="text-4xl font-bold text-center text-red-400 mb-6">
-          Welcome to Our Services
+        <h3 className="text-4xl font-bold text-center text-red-400 mb-10">
+          Welcome to Balloon Decoration All Ghaziabad{" "}
+          
         </h3>
+      </div>
+      <div>
+
       </div>
 
       {/* Cards Grid */}
