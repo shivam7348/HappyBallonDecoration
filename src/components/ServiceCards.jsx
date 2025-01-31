@@ -1,49 +1,13 @@
 import React from "react";
+import { servicescards } from "../utils/MockData";
 
 const ServiceCards = () => {
-  const services = [
-    {
-      id: 1,
-      name: "Birthday Decoration",
-      image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Birthday-min.jpg",
-    },
-    {
-      id: 2,
-      name: "Wedding Decoration",
-      image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Engagement-min.jpg",
-    },
-    {
-      id: 3,
-      name: "Baby Shower",
-      image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Annaprashan-min.jpg",
-    },
-    {
-      id: 4,
-      name: "Corporate Events",
-      image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Anniversary-min.jpg",
-    },
-    {
-      id: 5,
-      name: "Anniversary Decoration",
-      image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Wedding-min.jpg",
-    },
-    {
-      id: 6,
-      name: "Theme Party",
-      image:
-        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/Engagement-min.jpg",
-    },
-  ];
+  
 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 ">
-        {services.map((service) => (
+        {servicescards.map((service) => (
           <div
             key={service.id}
             className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
