@@ -17,7 +17,7 @@ const Header = () => {
   const formattedTime = currentTime.toLocaleTimeString();
 
   return (
-    <header className="sticky top-0 z-50 bg-[var(--glsr-red)] text-white p-4">
+    <header className=" bg-[var(--glsr-red)] text-white p-4">
       <div className="flex flex-col md:flex-row items-center justify-between md:justify-end space-y-2 md:space-y-0 md:space-x-4 md:mr-10">
         {/* Date and Time */}
         <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4">
