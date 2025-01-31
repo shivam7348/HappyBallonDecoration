@@ -20,12 +20,10 @@ const MainHeader = () => {
     <>
       <header className="w-full bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Company Logo" className="h-16 w-auto" />
           </div>
 
-          {/* Hamburger Menu Icon (visible only on mobile) */}
           <button
             onClick={toggleMenu}
             className="lg:hidden focus:outline-none"
@@ -76,7 +74,7 @@ const MainHeader = () => {
             </button>
 
             {/* Menu Links */}
-            <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 text-gray-700 font-semibold text-lg p-4 lg:p-0">
+            <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 text-gray-800 font-semibold text-xl p-4 lg:p-0 lg:mr-5">
               <li>
                 <Link
                   to="/"
@@ -89,7 +87,7 @@ const MainHeader = () => {
               <li>
                 <Link
                   to="/about"
-                  className="hover:text-blue-500 block"
+                  className="hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
                   About
@@ -98,7 +96,7 @@ const MainHeader = () => {
               <li>
                 <Link
                   to="/services"
-                  className="hover:text-blue-500 block"
+                  className="hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
                   Services
@@ -107,7 +105,7 @@ const MainHeader = () => {
               <li>
                 <Link
                   to="/products"
-                  className="hover:text-blue-500 block"
+                  className="hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
                   Products

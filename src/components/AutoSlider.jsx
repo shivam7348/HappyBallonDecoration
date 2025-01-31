@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
+import image1 from "../assets/2025.png";
+import image2 from "../assets/weeding.png";
+import image3 from "../assets/birthday.png";
+import image4 from "../assets/corporateEvents.png";
+
+
 
 const AutoSlider = () => {
   const slides = [
-    {
-      url: "https://www.slideegg.com/image/webpv2/830/13472-birthday-powerpoint-830.webp",
-    },
-    {
-      url: "https://cheetah.cherishx.com/uploads/1687940340_webp_original.webp",
-    },
-    {
-      url: "https://img.freepik.com/free-photo/new-year-banner-with-fireworks_23-2149539970.jpg",
-    },
-    {
-      url: "https://blissfulplans.com/wp-content/uploads/2023/12/big-fat-indian-weddings-1.jpg",
-    },
+    { url: image1 },
+   {url: image2},
+   {url: image3},
+   {url: image4},
+
+   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
