@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
 import image1 from "../assets/2025.png";
 import image2 from "../assets/weeding.png";
 import image3 from "../assets/birthday.png";
@@ -7,138 +6,156 @@ import image4 from "../assets/corporateEvents.png";
 
 const AutoSlider = () => {
   const slides = [
-    { url: image1 },
-    { url: image2 },
-    { url: image3 },
-    { url: image4 },
+    { url: image1, title: "2025 Events" },
+    { url: image2, title: "Wedding Services" },
+    { url: image3, title: "Birthday Celebrations" },
+    { url: image4, title: "Corporate Events" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState("right"); // Track slide direction
-  const [isHovered, setIsHovered] = useState(false); // Track hover state
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
-  useEffect(() => {
-    if (!isHovered) {
-      const timer = setInterval(() => {
-        nextSlide();
-      }, 5000); // Autoplay every 5 seconds
-
-      return () => clearInterval(timer);
+  const goToSlide = (index) => {
+    if (!isTransitioning && index !== currentIndex) {
+      setIsTransitioning(true);
+      setCurrentIndex(index);
+      // Reset transition state after animation completes
+      setTimeout(() => setIsTransitioning(false), 750);
     }
-  }, [currentIndex, isHovered]);
+  };
 
   const nextSlide = () => {
-    setDirection("right");
-    setCurrentIndex((prevIndex) =>
-      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
+    goToSlide((currentIndex + 1) % slides.length);
   };
 
   const prevSlide = () => {
-    setDirection("left");
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
+    goToSlide(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
   };
 
-  // Variants for smooth sliding effect
-  const slideVariants = {
-    hiddenRight: {
-      x: "100%",
-      scale: 0.8,
-      opacity: 0,
-    },
-    hiddenLeft: {
-      x: "-100%",
-      scale: 0.8,
-      opacity: 0,
-    },
-    visible: {
-      x: "0%",
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 1, // Smooth transition
-        ease: "easeInOut",
-      },
-    },
-    exitRight: {
-      x: "-100%",
-      scale: 0.8,
-      opacity: 0,
-      transition: {
-        duration: 1, // Smooth transition
-        ease: "easeInOut",
-      },
-    },
-    exitLeft: {
-      x: "100%",
-      scale: 0.8,
-      opacity: 0,
-      transition: {
-        duration: 1, // Smooth transition
-        ease: "easeInOut",
-      },
-    },
+  useEffect(() => {
+    if (!isPaused) {
+      const timer = setInterval(nextSlide, 5000);
+      return () => clearInterval(timer);
+    }
+  }, [currentIndex, isPaused]);
+
+  const handleKeyDown = (e) => {
+    if (e.key === "ArrowLeft") prevSlide();
+    if (e.key === "ArrowRight") nextSlide();
   };
 
   return (
     <div
       className="w-full flex items-center justify-center p-4"
-      onMouseEnter={() => setIsHovered(true)} // Pause on hover
-      onMouseLeave={() => setIsHovered(false)} // Resume on hover leave
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+      role="region"
+      aria-label="Image Slider"
     >
       <div className="w-full max-w-11xl">
-        <div className="relative h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg perspective-1000">
-          <AnimatePresence mode="wait" custom={direction}>
-            <motion.div
-              key={currentIndex}
-              custom={direction}
-              variants={slideVariants}
-              initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
-              animate="visible"
-              exit={direction === "right" ? "exitLeft" : "exitRight"}
-              className="absolute inset-0 w-full h-full"
+        <div
+          className="relative h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg shadow-2xl"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {/* Slides Container */}
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 w-full h-full transition-all duration-700 ease-in-out transform
+                ${
+                  index === currentIndex
+                    ? "opacity-100 translate-x-0 scale-100"
+                    : index < currentIndex
+                    ? "opacity-0 -translate-x-full scale-95"
+                    : "opacity-0 translate-x-full scale-95"
+                }`}
+              aria-hidden={currentIndex !== index}
             >
               <img
-                src={slides[currentIndex].url}
+                src={slide.url}
                 className="w-full h-full object-cover"
-                alt={`Slide ${currentIndex + 1}`}
+                alt={slide.title}
               />
-            </motion.div>
-          </AnimatePresence>
+              {/* Caption overlay */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <h3 className="text-white text-xl font-semibold">
+                  {slide.title}
+                </h3>
+              </div>
+            </div>
+          ))}
 
-          {/* Navigation arrows */}
+          {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 bg-white bg-opacity-90 p-2 sm:p-3 rounded-full hover:bg-opacity-75 transition-opacity duration-300 shadow-lg"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 z-10"
+            disabled={isTransitioning}
             aria-label="Previous slide"
           >
-            &#8592;
+            <svg
+              className="w-6 h-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
           </button>
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 bg-white bg-opacity-90 p-2 sm:p-3 rounded-full hover:bg-opacity-75 transition-opacity duration-300 shadow-lg"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 z-10"
+            disabled={isTransitioning}
             aria-label="Next slide"
           >
-            &#8594;
+            <svg
+              className="w-6 h-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           </button>
 
-          {/* Navigation dots */}
-          <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          {/* Navigation Dots */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
             {slides.map((_, index) => (
               <button
                 key={index}
-                onClick={() => {
-                  setDirection(index > currentIndex ? "right" : "left");
-                  setCurrentIndex(index);
-                }}
-                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors duration-300 ${
-                  currentIndex === index ? "bg-white" : "bg-white/50"
-                } hover:bg-white/75`}
+                onClick={() => goToSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300
+                  ${
+                    currentIndex === index
+                      ? "bg-white scale-110"
+                      : "bg-white/50 hover:bg-white/75"
+                  } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
                 aria-label={`Go to slide ${index + 1}`}
+                aria-current={currentIndex === index ? "true" : "false"}
               />
             ))}
+          </div>
+
+          {/* Progress Bar */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
+            <div
+              className="h-full bg-white/80 transition-all duration-[5000ms] ease-linear"
+              style={{
+                width: isPaused ? "0%" : "100%",
+                transitionProperty: "width",
+              }}
+            />
           </div>
         </div>
       </div>
