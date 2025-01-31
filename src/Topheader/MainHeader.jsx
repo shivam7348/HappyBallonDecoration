@@ -3,15 +3,12 @@ import logo from "../assets/logo.jpeg";
 import { Link } from "react-router-dom";
 
 const MainHeader = () => {
-  // State to manage the mobile menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to toggle the mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Function to close the mobile menu
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -82,37 +79,41 @@ const MainHeader = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:text-[var(--glsr-red)] block"
+                  className="relative group hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
                   Home
+                  <span className="absolute left-0 bottom-0 h-0.5 bg-[var(--glsr-red)] w-0 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </li>
               <li>
                 <Link
                   to="/about"
-                  className="hover:text-[var(--glsr-red)] block"
+                  className="relative group hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
                   About
+                  <span className="absolute left-0 bottom-0 h-0.5 bg-[var(--glsr-red)] w-0 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </li>
               <li>
                 <Link
                   to="/services"
-                  className="hover:text-[var(--glsr-red)] block"
+                  className="relative group hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
                   Services
+                  <span className="absolute left-0 bottom-0 h-0.5 bg-[var(--glsr-red)] w-0 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </li>
               <li>
                 <Link
                   to="/products"
-                  className="hover:text-[var(--glsr-red)] block"
+                  className="relative group hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
                   Products
+                  <span className="absolute left-0 bottom-0 h-0.5 bg-[var(--glsr-red)] w-0 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </li>
             </ul>
