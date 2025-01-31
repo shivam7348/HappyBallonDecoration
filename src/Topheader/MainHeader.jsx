@@ -15,7 +15,7 @@ const MainHeader = () => {
 
   return (
     <>
-      <header className="w-full bg-white shadow-sm">
+      <header className="w-full bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div>
             <img
