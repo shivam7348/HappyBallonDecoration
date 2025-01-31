@@ -8,19 +8,19 @@ const ServiceCards = () => {
         {servicescards.map((service) => (
           <div
             key={service.id}
-            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
+            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col relative group" // Added group class
           >
             {/* Image container with fixed height */}
             <div className="relative h-48 flex-shrink-0">
               <img
                 src={service.image}
                 alt={service.name}
-                className="w-full h-full object-cover" // Ensures the image fully covers the container
+                className="w-full h-full object-cover"
               />
             </div>
-            {/* Text container */}
-            <div className="p-4 flex-grow">
-              <h3 className="text-xl font-semibold text-gray-800 text-center">
+            {/* Text container - hidden by default, visible on hover */}
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h3 className="text-xl font-semibold text-white text-center">
                 {service.name}
               </h3>
             </div>
