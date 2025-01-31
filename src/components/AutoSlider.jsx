@@ -3,16 +3,16 @@ import React, { useState, useEffect } from "react";
 const AutoSlider = () => {
   const slides = [
     {
-      url: "https://choudharydecoratorsncr.com/wp-content/uploads/2024/11/Birthday.jpg",
+      url: "https://www.slideegg.com/image/webpv2/830/13472-birthday-powerpoint-830.webp",
     },
     {
-      url: "https://choudharydecoratorsncr.com/wp-content/uploads/2024/11/Choudhary-Decorators-NCR-choudharydecoratorsncr.com-Baby-Shower-1500-x-600-px.jpg",
+      url: "https://cheetah.cherishx.com/uploads/1687940340_webp_original.webp",
     },
     {
-      url: "https://choudharydecoratorsncr.com/wp-content/uploads/2024/12/www.choudharydecoratorsncr.com_.jpg",
+      url: "https://img.freepik.com/free-photo/new-year-banner-with-fireworks_23-2149539970.jpg",
     },
     {
-      url: "https://choudharydecoratorsncr.com/wp-content/uploads/2024/11/Wedding-Decorations.jpg",
+      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQMDoMUAtvmkmTwzoeG6P33sQIOcAqlYwAg&s",
     },
   ];
 
