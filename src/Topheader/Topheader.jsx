@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaWhatsapp, FaInstagram, FaFacebook,  } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Header = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -22,6 +22,13 @@ const Header = () => {
         <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4">
           <span className="text-sm md:text-base">{formattedDate}</span>
           <span className="text-sm md:text-base">{formattedTime}</span>
+        </div>
+
+        {/* Company Address */}
+        <div className="flex items-center">
+          <span className="text-sm md:text-base">
+            123 Company Street, City, Country
+          </span>
         </div>
 
         {/* Icons */}
