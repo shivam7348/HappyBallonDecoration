@@ -21,7 +21,7 @@ const MainHeader = () => {
             <img
               src={logo}
               alt="Company Logo"
-              className="h-12 w-auto sm:h-16" // Smaller size on mobile, larger on larger screens
+              className=" h-1   sm:h-16" // Smaller size on mobile, larger on larger screens
             />
           </div>
 
@@ -108,11 +108,21 @@ const MainHeader = () => {
               </li>
               <li>
                 <Link
-                  to="/products"
+                  to="/contact"
                   className="relative group hover:text-[var(--glsr-red)] block"
                   onClick={closeMenu}
                 >
-                  Products
+                  Contact
+                  <span className="absolute left-0 bottom-0 h-0.5 bg-[var(--glsr-red)] w-0 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/gallery"
+                  className="relative group hover:text-[var(--glsr-red)] block"
+                  onClick={closeMenu}
+                >
+                  Gallery
                   <span className="absolute left-0 bottom-0 h-0.5 bg-[var(--glsr-red)] w-0 group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </li>

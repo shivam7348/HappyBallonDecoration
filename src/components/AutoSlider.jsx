@@ -3,6 +3,8 @@ import image1 from "../assets/2025.png";
 import image2 from "../assets/weeding.png";
 import image3 from "../assets/birthday.png";
 import image4 from "../assets/corporateEvents.png";
+import image5 from "../assets/corporateEvents.png";
+import image6 from "../assets/corporateEvents.png";
 
 const AutoSlider = () => {
   const slides = [
