@@ -1,9 +1,12 @@
 import React from 'react'
+import OurServicesCards from '../components/OurServicesCards';
 
 function Services() {
   return (
-    <div>Services</div>
-  )
+    <div>
+      <OurServicesCards />
+    </div>
+  );
 }
 
 export default Services
