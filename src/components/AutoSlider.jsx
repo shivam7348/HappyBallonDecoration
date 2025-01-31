@@ -12,7 +12,7 @@ const AutoSlider = () => {
       url: "https://img.freepik.com/free-photo/new-year-banner-with-fireworks_23-2149539970.jpg",
     },
     {
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQMDoMUAtvmkmTwzoeG6P33sQIOcAqlYwAg&s",
+      url: "https://blissfulplans.com/wp-content/uploads/2023/12/big-fat-indian-weddings-1.jpg",
     },
   ];
 
