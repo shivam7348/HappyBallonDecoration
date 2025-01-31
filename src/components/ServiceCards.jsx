@@ -2,11 +2,9 @@ import React from "react";
 import { servicescards } from "../utils/MockData";
 
 const ServiceCards = () => {
-  
-
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
         {servicescards.map((service) => (
           <div
             key={service.id}
@@ -16,7 +14,7 @@ const ServiceCards = () => {
               <img
                 src={service.image}
                 alt={service.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain" // Changed to object-contain
               />
             </div>
             <div className="p-4">
