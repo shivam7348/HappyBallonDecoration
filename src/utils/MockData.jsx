@@ -4,7 +4,7 @@
      id: 1,
      name: "Mom To Be",
      image:
-       "https://i.pinimg.com/736x/6e/85/76/6e8576dee81932a559b3be489eb3fdf2.jpg",
+       "https://m.media-amazon.com/images/I/61jWF1V1s7L._AC_UF1000,1000_QL80_.jpg",
    },
    {
      id: 2,
@@ -69,7 +69,7 @@
      id: 12,
      name: "Welcome Baby ",
      image:
-       "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/choudhury-5.jpeg",
+       "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/choudhaory-105.jpeg",
    },
    {
      id: 13,

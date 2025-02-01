@@ -27,7 +27,7 @@ const Form = () => {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="max-w-4xl w-full bg-white shadow-md rounded-lg overflow-hidden flex">
         {/* Left Side Content */}
-        <div className="w-1/2 bg-[var(--glsr-red)] text-white p-8 flex flex-col justify-center opacity-80 shadow-lg">
+        <div className="w-1/2 bg-gray-100 text-black p-8 flex flex-col justify-center opacity-80 shadow-lg">
           <h2 className="text-3xl font-bold mb-4">Save Time!</h2>
           <p className="text-lg mb-4">
             Get Callback From Our Event Advisor
@@ -38,7 +38,7 @@ const Form = () => {
         </div>
 
         {/* Right Side Form */}
-        <div className="w-1/2 p-8">
+        <div className="w-1/2 p-8 bg-[var(--glsr-red)]">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name:</label>
@@ -49,7 +49,7 @@ const Form = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-gray- rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               />
             </div>
             <div>

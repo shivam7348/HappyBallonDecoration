@@ -3,7 +3,7 @@ import { FaWhatsapp, FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-red-700 text-white pt-10">
+    <footer className="bg-[var(--glsr-red)] text-white pt-10">
       {/* Header Section */}
       <div className="text-center">
         <h2 className="text-2xl font-bold">Surprises That Wow</h2>
@@ -39,20 +39,20 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-lg">Happy Ballon Decorations</h3>
           <p>Shop 11, PALIKA KENDRA, Connaught Place, New Delhi 110001</p>
-          <p>Contact: 09650291995 / 08287670046</p>
-          <p>Email: info@choudharydecoratorsncr.com</p>
+          <p>Contact: 09717559655 / 09717559655</p>
+          <p>Email: info@happy_birthday_decoration@gmail.com</p>
         </div>
         <div>
-          <h3 className="font-bold text-lg">Gurugram Branch</h3>
+          <h3 className="font-bold text-lg text-center">Ghaziabad </h3>
           <p>Shop 23, Sector 25, Gurugram, Haryana 122022</p>
-          <p>Contact: 09650291995 / 08287670046</p>
-          <p>Email: info@choudharydecoratorsncr.com</p>
+          <p>Contact: 09717559655 / 09717559655</p>
+          <p>Email: info@happy_birthday_decoration@gmail.com</p>
         </div>
         <div>
           <h3 className="font-bold text-lg">Noida Branch</h3>
-          <p>Shop 28, Near Sector 93B, Noida, Uttar Pradesh 201304</p>
-          <p>Contact: 09650291995 / 08287670046</p>
-          <p>Email: info@choudharydecoratorsncr.com</p>
+          <p>Shop 28, Near Sector 93B, Ghaziabad, Uttar Pradesh 201304</p>
+          {/* <p>Contact: 09650291995 / 08287670046</p> */}
+          {/* <p>Email: info@choudharydecoratorsncr.com</p> */}
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Phone Call Button on the Left Side */}
         <div>
           <a
-            href="tel:09650291995"
+            href="tel:09717559655"
             className="bg-green-500 w-16 h-16 rounded-full text-white text-xl flex items-center justify-center"
           >
             <FaPhoneAlt />
@@ -70,12 +70,12 @@ const Footer = () => {
 
 
         {/* Company Name in the Center (Optional) */}
-        <span className="text-sm">Choudhary Decorators NCR</span>
+        <span className="text-sm">Happy Birtday Decoration</span>
 
         {/* WhatsApp and Arrow-Up Buttons on the Right Side */}
         <div className="flex space-x-4">
           <a
-            href="https://wa.me/09650291995"
+            href="https://wa.me/09717559655"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 p-3 rounded-full text-white text-xl flex items-center justify-center"
