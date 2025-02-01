@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 
@@ -20,11 +20,11 @@ const Header = () => {
   return (
     <header className="bg-[var(--glsr-red)] text-white p-2">
       <div className="flex flex-col md:flex-row items-center justify-between md:justify-end space-y-2 md:space-y-0 md:space-x-4 md:mr-10">
-             <span>
-           <Marquee className="p-1 text-xl  font-semibold">
-  Welcome Happy Baloon Decoration NCR!
-</Marquee>
-             </span>
+        <span>
+          <Marquee className="p-1 text-xl  font-semibold">
+            Welcome Happy Baloon Decoration  Ghaziabad and Delhi NCR!
+          </Marquee>
+        </span>
         {/* Date and Time */}
         <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4">
           <span className="text-sm md:text-base">{formattedDate}</span>
@@ -35,7 +35,7 @@ const Header = () => {
         {/* Company Address */}
         <div className="flex items-center">
           <span className="text-sm md:text-base">
-           Ghaziabad
+            Ghaziabad
           </span>
         </div>
 

@@ -5,7 +5,7 @@ import React from "react";
     id: 1,
     name: "RDC",
     image:
-      "https://m.media-amazon.com/images/I/61jWF1V1s7L._AC_UF1000,1000_QL80_.jpg",
+      "",
   },
 ]
 
