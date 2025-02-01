@@ -1,26 +1,30 @@
-
 const BalloonDecoration = () => {
+  const serviceAreas = [
+    { name: "RDC", description: "We provide balloon decoration services in Indirapuram for all occasions." },
+    { name: "Vasundara", description: "Celebrate your events with our stunning balloon decorations in Vaishali." },
+    { name: "Kavi Nagar", description: "Make your events memorable with our creative balloon decorations in Raj Nagar." },
+    { name: "Shastri Nagar", description: "Professional balloon decoration services available in Kaushambi." },
+    { name: "Noida  ", description: "Transform your events with our beautiful balloon decorations in Vasundhara." },
+    { name: "Indirapuram ", description: "Transform your events with our beautiful balloon decorations in Vasundhara." },
+    { name: "Ghaziabad ", description: "Transform your events with our beautiful balloon decorations in Vasundhara." },
+    { name: "New Delhi  ", description: "Transform your events with our beautiful balloon decorations in Vasundhara." },
+    { name: "Raj Nagar Extension ", description: "Transform your events with our beautiful balloon decorations in Vasundhara." },
+  ];
+
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto my-8">
       <h1 className="text-4xl font-bold text-center text-red-400 mb-6">
-       Happy  Balloon Decoration Services Area   in  Ghaziabad
+        Happy Balloon Decoration Services Area in Ghaziabad
       </h1>
-      <p className="text-lg text-gray-700 mb-4 font-bold text-center mx-12">
-        Welcome to Happy Balloon Decoration – your ultimate destination for
-        breathtaking balloon decorations that will transform any event into a
-        magical experience. With a passion for creativity and an eye for detail,
-        we specialize in designing stunning balloon arrangements for birthdays,
-        weddings, corporate events, and every special occasion in between.
-      </p>
-      <p className="text-lg text-gray-700 font-bold text-center">
-        At Happy Balloon Decoration, we believe that every event deserves to be
-        unique and memorable. Our team of skilled decorators brings years of
-        expertise and a touch of artistry to every project, ensuring that your
-        celebration stands out. From personalized themes to intricate designs,
-        we work closely with you to bring your vision to life. Whether it’s a
-        grand wedding arch, a whimsical birthday setup, or an elegant corporate
-        display, we’re dedicated to making your event unforgettable.
-      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {serviceAreas.map((area, index) => (
+          <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h2 className="text-2xl font-semibold text-red-400 mb-2">{area.name}</h2>
+            <p className="text-gray-600">{area.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
