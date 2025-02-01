@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaArrowUp, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
@@ -54,7 +53,10 @@ const Footer = () => {
           <div className="space-y-4">
             {/* <h3 className="text-2xl font-bold mb-4">Find Us</h3> */}
             <div className="rounded-lg overflow-hidden shadow-lg h-64">
-              <iframe
+            <a href="https://www.google.com/maps/place/New+Delhi,+Delhi/@28.5275544,77.0441705,11z/data=!3m1!4b1!4m15!1m8!3m7!1s0x390cf1bb41c50fdf:0xe6f06fd26a7798ba!2sGhaziabad,+Uttar+Pradesh!3b1!8m2!3d28.6691565!4d77.4537578!16zL20vMDZkbG0x!3m5!1s0x390cfd5b347eb62d:0x52c2b7494e204dce!8m2!3d28.6139298!4d77.2088282!16zL20vMGRsdjA?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D">
+            
+            <img src="/src/assets/maps.png" alt="img"/></a>
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.123456789012!2d77.12345678901234!3d28.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA3JzI0LjQiTiA3N8KwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
@@ -63,7 +65,7 @@ const Footer = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -78,7 +80,7 @@ const Footer = () => {
         {/* Fixed Action Buttons */}
         <div className="fixed bottom-33 right-4 space-y-3">
           <a
-            href="https://wa.me/09717559655"
+            href="https://wa.me/7678433751"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 p-3 rounded-full flex items-center justify-center hover:bg-green-600 transition-all shadow-lg"
@@ -87,7 +89,7 @@ const Footer = () => {
           </a>
           
           <a
-            href="tel:09717559655"
+            href="tel:7678433751"
             className="bg-blue-500 p-3 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all shadow-lg"
           >
             <FaPhoneAlt className="text-xl" />
