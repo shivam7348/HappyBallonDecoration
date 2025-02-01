@@ -1,13 +1,13 @@
 import React from "react";
-// import { services } from "../utils/MockData";
- const services = [
-  {
-    id: 1,
-    name: "RDC",
-    image:
-      "",
-  },
-]
+import { services } from "../utils/MockData";
+//  const services = [
+//   {
+//     id: 1,
+//     name: "RDC",
+//     image:
+//       "",
+//   },
+// ]
 
 const OurServicesCards = () => {
   return (
