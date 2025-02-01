@@ -31,9 +31,9 @@ function About() {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
+          {/* <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">
             Learn More
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
