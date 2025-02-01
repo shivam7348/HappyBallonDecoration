@@ -22,7 +22,7 @@ const Header = () => {
       <div className="flex flex-col md:flex-row items-center justify-between md:justify-end space-y-2 md:space-y-0 md:space-x-4 md:mr-10">
              <span>
            <Marquee className="p-1 text-xl  font-semibold">
-  Welcome to Delhi NCR!
+  Welcome Happy Baloon Decoration NCR!
 </Marquee>
              </span>
         {/* Date and Time */}

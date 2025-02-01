@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
 
       {/* Features Section */}
-      <div className="flex flex-wrap justify-center bg-gray-100 text-black py-4">
+      {/* <div className="flex flex-wrap justify-center bg-gray-100 text-black py-4">
         <div className="flex items-center mx-4">
           <span className="text-yellow-500 text-2xl mr-2">💰</span>
           <p>Best Prices & Offers</p>
@@ -32,7 +32,7 @@ const Footer = () => {
           <span className="text-yellow-500 text-2xl mr-2">✅</span>
           <p>Assured Services</p>
         </div>
-      </div>
+      </div> */}
 
       {/* Branch Details */}
       <div className="container mx-auto py-6 px-4 text-center md:text-left grid md:grid-cols-3 gap-6">
