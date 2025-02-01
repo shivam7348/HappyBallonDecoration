@@ -23,7 +23,7 @@ const MainHeader = () => {
             <img
               src={logo}
               alt="Company Logo"
-              className="h-4 sm:h-10 lg:h-12 xl:h-16"
+              className="h-12 sm:h-10 lg:h-12 xl:h-16"
             />
           </div>
 
