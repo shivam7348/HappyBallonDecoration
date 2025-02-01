@@ -5,12 +5,24 @@ const OurServicesCards = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Heading */}
-      <div>
-        <h3 className="text-4xl font-bold text-center text-red-400 mb-10">
-          Welcome to Balloon Decoration All Ghaziabad{" "}
-          
-        </h3>
-      </div>
+      <div className="text-center mb-16">
+  <h3 className="text-4xl font-bold text-red-400 mb-4">
+    Welcome to Our  Happy  Balloon Decoration Services in Ghaziabad
+  </h3>
+  <p className="text-lg text-gray-700 mx-auto max-w-3xl">
+    Transform your events with our stunning balloon decorations. Whether it’s a birthday, wedding, or corporate event, we provide custom designs that leave a lasting impression. Located in Ghaziabad, we cater to all your celebration needs.
+  </p>
+</div>
+
+<div className="text-center mb-16">
+  <h3 className="text-3xl font-bold text-green-400 mb-4">
+    Providing Excellent Happy  Balloon Decoration Services for Every Event
+  </h3>
+  <p className="text-lg text-gray-700 mx-auto max-w-3xl">
+    Our team specializes in creating beautiful, personalized balloon decor that will make your event unforgettable. From elegant wedding setups to fun birthday themes, we ensure that your event is decorated to perfection with creativity and style.
+  </p>
+</div>
+
       <div>
 
       </div>

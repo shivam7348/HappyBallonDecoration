@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 // import logo from "../assets/logo.jpeg";
 
 import logo from "../assets/logo.jpg"
@@ -20,11 +20,11 @@ const MainHeader = () => {
       <header className="w-full bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div>
-          <img
-  src={logo}
-  alt="Company Logo"
-  className="h-8 sm:h-10 lg:h-12 xl:h-16" 
-/>
+            <img
+              src={logo}
+              alt="Company Logo"
+              className="h-4 sm:h-10 lg:h-12 xl:h-16"
+            />
           </div>
 
           <button
@@ -50,9 +50,8 @@ const MainHeader = () => {
 
           {/* Navigation Menu */}
           <nav
-            className={`${
-              isMenuOpen ? "block" : "hidden"
-            } lg:flex lg:items-center lg:space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto bg-white shadow-lg lg:shadow-none z-50`}
+            className={`${isMenuOpen ? "block" : "hidden"
+              } lg:flex lg:items-center lg:space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto bg-white shadow-lg lg:shadow-none z-50`}
           >
             {/* Close Button (visible only on mobile) */}
             <button

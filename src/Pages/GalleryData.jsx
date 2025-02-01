@@ -9,10 +9,10 @@ const images = [
     description: 'Wedding Decoration',
   },
   {
-    src: 'https://via.placeholder.com/400',
+    src: 'https://images.prismic.io/eventsgyani/edb4a350-ba27-4b99-9c8c-28526310ea52_13.+colorful+drapes+decor.jpg?auto=compress,format&rect=0,0,916,610&w=740&h=493',
     alt: 'Image 2',
-    title: 'Image 2 Title',
-    description: 'This is a description for Image 2.',
+    title: 'Party Decoration',
+    description: 'Party Decoration.',
   },
   {
     src: 'https://via.placeholder.com/400',
