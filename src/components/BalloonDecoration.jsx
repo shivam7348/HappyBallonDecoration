@@ -1,4 +1,3 @@
-import React from "react";
 
 const BalloonDecoration = () => {
   return (
@@ -6,7 +5,7 @@ const BalloonDecoration = () => {
       <h1 className="text-4xl font-bold text-center text-red-400 mb-6">
        Happy  Balloon Decoration Services Near Me in Your Ghaziabad
       </h1>
-      <p className="text-lg text-gray-700 mb-4 font-bold text-center">
+      <p className="text-lg text-gray-700 mb-4 font-bold text-center mx-12">
         Welcome to Happy Balloon Decoration – your ultimate destination for
         breathtaking balloon decorations that will transform any event into a
         magical experience. With a passion for creativity and an eye for detail,

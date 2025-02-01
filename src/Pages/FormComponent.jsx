@@ -41,7 +41,7 @@ const Form = () => {
         <div className="w-full md:w-1/2 p-8 bg-[var(--glsr-red)]">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name:</label>
+              <label htmlFor="name" className="block text-sm font-medium text-white">Name:</label>
               <input
                 type="text"
                 id="name"
@@ -49,11 +49,11 @@ const Form = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                className="mt-1 block w-full px-3 py-2 border border-white-300 rounded-md shadow-sm focus:outline-none  focus:border-indigo-200"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email:</label>
+              <label htmlFor="email" className="block text-sm font-medium text-white">Email:</label>
               <input
                 type="email"
                 id="email"
@@ -65,7 +65,7 @@ const Form = () => {
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone:</label>
+              <label htmlFor="phone" className="block text-sm font-medium text-white">Phone:</label>
               <input
                 type="tel"
                 id="phone"
@@ -77,7 +77,7 @@ const Form = () => {
               />
             </div>
             <div>
-              <label htmlFor="eventDate" className="block text-sm font-medium text-gray-700">Event Date:</label>
+              <label htmlFor="eventDate" className="block text-sm font-medium text-white">Event Date:</label>
               <input
                 type="date"
                 id="eventDate"

@@ -6,7 +6,7 @@ const OurServicesCards = () => {
     <div className="container mx-auto px-4 py-8">
       {/* Heading */}
       <div className="text-center mb-16">
-  <h3 className="text-4xl font-bold text-red-400 mb-4">
+  <h3 className="text-4xl font-bold text-red-400 mb-4 mx-">
     Welcome to Our  Happy  Balloon Decoration Services in Ghaziabad
   </h3>
   <p className="text-lg text-gray-700 mx-auto max-w-3xl">
@@ -14,7 +14,7 @@ const OurServicesCards = () => {
   </p>
 </div>
 
-<div className="text-center mb-16">
+{/* <div className="text-center mb-16">
   <h3 className="text-3xl font-bold text-green-400 mb-4">
     Providing Excellent Happy  Balloon Decoration Services for Every Event
   </h3>
@@ -25,7 +25,7 @@ const OurServicesCards = () => {
 
       <div>
 
-      </div>
+      </div> */}
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-4 sm:mx-6 md:mx-12 lg:mx-20">
@@ -51,7 +51,7 @@ const OurServicesCards = () => {
 
             {/* Content Section */}
             <div className="p-2 flex flex-col items-center justify-center bg-[var(--glsr-red)] opacity">
-              <h3 className="text-lg font-semibold text-gray-800 text-center transform group-hover:translate-y-0 transition-transform duration-300">
+              <h3 className="text-lg font-semibold text-white text-center transform group-hover:translate-y-0 transition-transform duration-300">
                 {service.name}
               </h3>
               <p className="text-sm text-gray-600 text-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
