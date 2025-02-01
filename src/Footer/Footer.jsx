@@ -8,9 +8,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-red-600 to-red-800 text-white relative">
+    <footer className="bg-black text-white relative">
       {/* Top Section with Testimonial Call */}
-      <div className="text-center py-8 bg-red-700/30">
+      <div className="text-center py-8 bg-[var(--glsr-red)]">
         <h2 className="text-3xl font-bold mb-2">Surprises That Wow</h2>
         <p className="text-yellow-300 text-lg font-medium">Hear From Our Happy Clients!</p>
       </div>
@@ -51,7 +51,7 @@ const Footer = () => {
 
           {/* Map Section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold mb-4">Find Us</h3>
+            {/* <h3 className="text-2xl font-bold mb-4">Find Us</h3> */}
             <div className="rounded-lg overflow-hidden shadow-lg h-64">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.123456789012!2d77.12345678901234!3d28.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA3JzI0LjQiTiA3N8KwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
@@ -69,7 +69,7 @@ const Footer = () => {
       </div>
 
       {/* Fixed Bottom Bar */}
-      <div className="bg-red-900/90 backdrop-blur-sm fixed bottom-0 w-full py-3 px-4 flex justify-between items-center z-50">
+      <div className="bg-black backdrop-blur-sm fixed bottom-0 w-full py-3 px-4 flex justify-between items-center z-50">
       
 
         <span className="text-sm font-medium text-center">Happy Birthday Decoration</span>
