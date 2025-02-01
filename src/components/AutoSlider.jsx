@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../assets/2025.png";
-import image2 from "../assets/weeding.png";
+import image1 from "../assets/party.png";
+import image2 from "../assets/weeding.jpg";
 import image3 from "../assets/birthday.png";
-import image4 from "../assets/corporateEvents.png";
+import image4 from "../assets/Cute  Shower.png";
 
 
 const AutoSlider = () => {

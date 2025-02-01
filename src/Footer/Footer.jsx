@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white relative">
       {/* Top Section with Testimonial Call */}
-      <div className="text-center py-8 bg-[var(--glsr-red)]">
+      <div className="text-center py-8 bg-[var(--glsr-red)] ">
         <h2 className="text-3xl font-bold mb-2">Surprises That Wow</h2>
         <p className="text-yellow-300 text-lg font-medium">Hear From Our Happy Clients!</p>
       </div>
@@ -35,16 +35,17 @@ const Footer = () => {
                 <FaMapMarkerAlt className="text-yellow-300 text-xl mt-1" />
                 <div>
                   <h4 className="font-semibold text-lg">Ghaziabad</h4>
-                  <p className="text-gray-200">B-440A, Sector 7, Pocket B,<br />Nagar 2nd, Patel Nagar<br />Ghaziabad, UttarPradesh 201003</p>
+                  <p className="text-gray-200">B/440 Near Matero Station Ghaziabad 
+                  pin-201003</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <FaPhoneAlt className="text-yellow-300" />
-                <p>09717559655 / 09717559655</p>
+                <p>7678433751  /7678433751 </p>
               </div>
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-yellow-300" />
-                <p>info@happy_birthday_decoration@gmail.com</p>
+                <p>info@happybirthdaydecoration@gmail.com</p>
               </div>
             </div>
           </div>
