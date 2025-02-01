@@ -12,7 +12,12 @@
      image:
        "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/81Pnx8djXlL-2048x2048.jpg",
    },
-  
+   {
+     id: 3,
+     name: "Naming Decoration",
+     image:
+       "https://balloonpro.in/wp-content/uploads/2021/03/20210306_090934.webp",
+   },
    {
      id: 4,
      name: "Party Decoration",

@@ -28,7 +28,8 @@ const Form = () => {
       <div className="max-w-4xl w-full bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Left Side Content */}
         <div className="w-full md:w-1/2 bg-gray-100 text-black p-8 flex flex-col justify-center opacity-80 shadow-lg mb-6 md:mb-0">
-          <h2 className="text-3xl font-bold mb-4">Save Time!</h2>
+          <h2 className="text-3xl font-bold mb-4">Save Time  <span className="">Book Now!</span>
+          </h2>
           <p className="text-lg mb-4">
             Get Callback From Our Event Advisor
           </p>
