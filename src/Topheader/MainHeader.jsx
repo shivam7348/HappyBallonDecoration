@@ -20,11 +20,13 @@ const MainHeader = () => {
       <header className="w-full bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto my-auto py-4 flex justify-between items-center">
           <div>
-            <img
+           <Link to="/">
+           <img
               src={logo}
               alt="Company Logo"
               className="h-12 sm:h-10 lg:h-12 xl:h-16"
             />
+           </Link>
           </div>
 
           <button
