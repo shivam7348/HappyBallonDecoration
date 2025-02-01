@@ -20,6 +20,7 @@ function About() {
               alt="About Us"
               className="rounded-lg shadow-lg w-full h-auto object-cover"
             /> */}
+            <img src="https://balloonpro.in/wp-content/uploads/2021/03/20210306_090934.webp" alt=""/>
           </div>
 
           {/* Description */}
