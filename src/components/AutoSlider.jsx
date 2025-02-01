@@ -7,9 +7,9 @@ import image4 from "../assets/corporateEvents.png";
 
 const AutoSlider = () => {
   const slides = [
+    { url: image3, title: "Birthday Celebrations" },
     { url: image1, title: "2025 Events" },
     { url: image2, title: "Wedding Services" },
-    { url: image3, title: "Birthday Celebrations" },
     { url: image4, title: "Corporate Events" },
   ];
 
