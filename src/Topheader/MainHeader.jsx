@@ -95,7 +95,7 @@ const MainHeader = () => {
         className="relative group text-gray-600 pb-2 lg:pb-6"
         onClick={closeMenu}
       >
-        About
+        About us
         <span className="absolute left-0 bottom-[-6px] lg:bottom-[-4px] w-full h-[3px] bg-pink-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
       </Link>
     </li>
@@ -109,16 +109,7 @@ const MainHeader = () => {
         <span className="absolute left-0 bottom-[-6px] lg:bottom-[-4px] w-full h-[3px] bg-pink-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
       </Link>
     </li>
-    <li>
-      <Link
-        to="/contact"
-        className="relative group text-gray-600 pb-2 lg:pb-6"
-        onClick={closeMenu}
-      >
-        Contact
-        <span className="absolute left-0 bottom-[-6px] lg:bottom-[-4px] w-full h-[3px] bg-pink-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-      </Link>
-    </li>
+   
     <li>
       <Link
         to="/gallery"
@@ -126,6 +117,16 @@ const MainHeader = () => {
         onClick={closeMenu}
       >
         Gallery
+        <span className="absolute left-0 bottom-[-6px] lg:bottom-[-4px] w-full h-[3px] bg-pink-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+      </Link>
+    </li>
+     <li>
+      <Link
+        to="/contact"
+        className="relative group text-gray-600 pb-2 lg:pb-6"
+        onClick={closeMenu}
+      >
+        Contact us
         <span className="absolute left-0 bottom-[-6px] lg:bottom-[-4px] w-full h-[3px] bg-pink-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
       </Link>
     </li>
