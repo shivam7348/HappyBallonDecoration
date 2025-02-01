@@ -57,39 +57,39 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className=" text-white flex justify-between items-center px-4 py-2 fixed bottom-0 w-full">
-        {/* Phone Call Button on the Left Side */}
-        <div>
-          <a
-            href="tel:09717559655"
-            className="bg-green-500 w-16 h-16 rounded-full text-white text-xl flex items-center justify-center"
-          >
-            <FaPhoneAlt />
-          </a>
-        </div>
+      <div className="text-white flex justify-between items-center px-4 py-2 fixed bottom-0 w-full ">
+  {/* Phone Call Button on the Left Side */}
+  <div>
+    <a
+      href="tel:09717559655"
+      className="bg-green-500 w-16 h-16 rounded-full text-white text-xl flex items-center justify-center"
+    >
+      <FaPhoneAlt />
+    </a>
+  </div>
 
+  {/* Company Name in the Center */}
+  <span className="text-sm text-center flex-grow">Happy Birthday Decoration</span>
 
-        {/* Company Name in the Center (Optional) */}
-        <span className="text-sm">Happy Birtday Decoration</span>
+  {/* WhatsApp and Arrow-Up Buttons on the Right Side */}
+  <div className="flex space-x-4">
+    <a
+      href="https://wa.me/09717559655"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-green-500 p-3 rounded-full text-white text-xl flex items-center justify-center"
+    >
+      <FaWhatsapp />
+    </a>
+    <a
+      href="#"
+      className="bg-red-500 p-3 rounded-full text-white text-xl flex items-center justify-center"
+    >
+      <FaArrowUp />
+    </a>
+  </div>
+</div>
 
-        {/* WhatsApp and Arrow-Up Buttons on the Right Side */}
-        <div className="flex space-x-4">
-          <a
-            href="https://wa.me/09717559655"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-500 p-3 rounded-full text-white text-xl flex items-center justify-center"
-          >
-            <FaWhatsapp />
-          </a>
-          <a
-            href="#"
-            className="bg-red-500 p-3 rounded-full text-white text-xl"
-          >
-            <FaArrowUp />
-          </a>
-        </div>
-      </div>
     </footer>
   );
 };
