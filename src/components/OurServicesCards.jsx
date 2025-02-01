@@ -56,7 +56,7 @@ const OurServicesCards = () => {
             </div>
 
             {/* Content Section */}
-            <div className="p-3 flex flex-col items-center justify-center bg-red-500 text-white">
+            <div className="p-3 flex flex-col items-center justify-center bg-[var(--glsr-red)] text-white">
               <h3 className="text-lg font-semibold text-center">
                 {service.name}
               </h3>
