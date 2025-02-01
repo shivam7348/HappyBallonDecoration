@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import logo from "../assets/logo.jpeg";
+import  { useState } from "react";
+// import logo from "../assets/logo.jpeg";
+
+import logo from "../assets/logo.jpg"
 import { Link } from "react-router-dom";
 
 const MainHeader = () => {
@@ -18,11 +20,11 @@ const MainHeader = () => {
       <header className="w-full bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div>
-            <img
-              src={logo}
-              alt="Company Logo"
-              className=" sm:h-16" // Smaller size on mobile, larger on larger screens
-            />
+          <img
+  src={logo}
+  alt="Company Logo"
+  className="h-8 sm:h-10 lg:h-12 xl:h-16" 
+/>
           </div>
 
           <button
@@ -75,7 +77,7 @@ const MainHeader = () => {
             </button>
 
             {/* Menu Links */}
-            <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 text-gray-800 font-semibold text-xl p-4 lg:p-0 lg:mr-5">
+            <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-12 text-gray-800 font-semibold text-xl p-4 lg:p-0 lg:mr-5">
               <li>
                 <Link
                   to="/"

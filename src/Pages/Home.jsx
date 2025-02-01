@@ -3,8 +3,7 @@ import AutoSlider from '../components/AutoSlider';
 import BalloonDecoration from '../components/BalloonDecoration';
 import ServiceCards from '../components/ServiceCards';
 import OurServicesCards from '../components/OurServicesCards';
-import FormComponent from './FormComponent';
-
+import Form from "../Pages/FormComponent"
 function Home() {
   return (
     <>
@@ -12,7 +11,7 @@ function Home() {
       <ServiceCards />
       <BalloonDecoration />
       <OurServicesCards />
-      <FormComponent />
+      <Form />
     </>
   );
 }

@@ -1,227 +1,104 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-const FormComponent = () => {
+const Form = () => {
   const [formData, setFormData] = useState({
-    occasion: "",
-    decorationItem: "",
-    name: "",
-    contact: "",
-    pincode: "",
-    dateTime: "",
+    name: '',
+    email: '',
+    phone: '',
+    eventDate: '',
   });
-
-  const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-
-  const validateForm = () => {
-    const newErrors = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-
-    if (!formData.contact.trim()) {
-      newErrors.contact = "Contact number is required";
-    } else if (!/^\d{10}$/.test(formData.contact)) {
-      newErrors.contact = "Please enter a valid 10-digit contact number";
-    }
-
-    if (!formData.pincode.trim()) {
-      newErrors.pincode = "Pincode is required";
-    } else if (!/^\d{6}$/.test(formData.pincode)) {
-      newErrors.pincode = "Please enter a valid 6-digit pincode";
-    }
-
-    if (!formData.dateTime) {
-      newErrors.dateTime = "Date and time are required";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-    if (errors[name]) {
-      setErrors((prev) => ({ ...prev, [name]: "" }));
-    }
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log("Form Submitted:", formData);
-      setSubmitted(true);
-      setFormData({
-        occasion: "",
-        decorationItem: "",
-        name: "",
-        contact: "",
-        pincode: "",
-        dateTime: "",
-      });
-      setTimeout(() => setSubmitted(false), 3000);
-    }
+    // Handle form submission logic here
+    console.log('Form Data Submitted:', formData);
+    // You can send the data to your backend or display a success message
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-pink-100 p-6 flex items-center justify-center">
-      <div
-        className="absolute inset-0 bg-repeat opacity-5"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 30c2.5-2.5 6.5-2.5 9 0s2.5 6.5 0 9-6.5 2.5-9 0-2.5-6.5 0-9zm0-10c2.5-2.5 6.5-2.5 9 0s2.5 6.5 0 9-6.5 2.5-9 0-2.5-6.5 0-9zm10 0c2.5-2.5 6.5-2.5 9 0s2.5 6.5 0 9-6.5 2.5-9 0-2.5-6.5 0-9zm-10 20c2.5-2.5 6.5-2.5 9 0s2.5 6.5 0 9-6.5 2.5-9 0-2.5-6.5 0-9z' fill='%23FF69B4' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-        }}
-      ></div>
-
-      <div className="w-full max-w-lg mx-auto bg-white/95 backdrop-blur-sm shadow-xl rounded-lg border border-pink-200 p-8">
-        <div className="text-center mb-8">
-          <div className="mx-auto w-20 h-1 bg-gradient-to-r from-pink-200 to-pink-400 rounded-full mb-6"></div>
-          <h2 className="text-3xl font-bold text-pink-700 mb-2">Save Time!</h2>
-          <p className="text-lg text-pink-600 mb-2">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+      <div className="max-w-4xl w-full bg-white shadow-md rounded-lg overflow-hidden flex">
+        {/* Left Side Content */}
+        <div className="w-1/2 bg-[var(--glsr-red)] text-white p-8 flex flex-col justify-center opacity-80 shadow-lg">
+          <h2 className="text-3xl font-bold mb-4">Save Time!</h2>
+          <p className="text-lg mb-4">
             Get Callback From Our Event Advisor
           </p>
-          <p className="text-sm text-gray-600">
-            Don't waste time searching for the perfect decoration for your
-            event. Fill out the form below and our advisor will contact you
-            shortly.
+          <p className="text-sm">
+            Dont waste any more time searching for the perfect balloon decoration for your event. Let our event advisor at Choudhary Decorators NCR take care of it for you! Simply fill out the form and our advisor will contact you shortly.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="space-y-2">
-            <label className="block text-pink-700 text-sm font-medium">
-              Occasion
-            </label>
-            <select
-              name="occasion"
-              value={formData.occasion}
-              onChange={handleChange}
-              className="w-full p-3 rounded-lg border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-500 bg-white"
+        {/* Right Side Form */}
+        <div className="w-1/2 p-8">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div>
+              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div>
+              <label htmlFor="eventDate" className="block text-sm font-medium text-gray-700">Event Date:</label>
+              <input
+                type="date"
+                id="eventDate"
+                name="eventDate"
+                value={formData.eventDate}
+                onChange={handleChange}
+                required
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
-              <option value="">Select Occasion</option>
-              <option value="birthday">Birthday</option>
-              <option value="wedding">Wedding</option>
-              <option value="anniversary">Anniversary</option>
-            </select>
-          </div>
-
-          <div className="space-y-2">
-            <label className="block text-pink-700 text-sm font-medium">
-              Decoration Items
-            </label>
-            <select
-              name="decorationItem"
-              value={formData.decorationItem}
-              onChange={handleChange}
-              className="w-full p-3 rounded-lg border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-500 bg-white"
-            >
-              <option value="">Select Decoration Items</option>
-              <option value="balloons">Balloons</option>
-              <option value="flowers">Flowers</option>
-              <option value="lights">Lights</option>
-            </select>
-          </div>
-
-          <div className="space-y-2">
-            <label className="block text-pink-700 text-sm font-medium">
-              Name *
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              className={`w-full p-3 rounded-lg border focus:outline-none focus:ring-2 ${
-                errors.name
-                  ? "border-red-500"
-                  : "border-pink-200 focus:ring-pink-500"
-              }`}
-            />
-            {errors.name && (
-              <p className="text-sm text-red-500">{errors.name}</p>
-            )}
-          </div>
-
-          <div className="space-y-2">
-            <label className="block text-pink-700 text-sm font-medium">
-              Contact Number *
-            </label>
-            <input
-              type="text"
-              name="contact"
-              value={formData.contact}
-              onChange={handleChange}
-              placeholder="Your Contact No."
-              className={`w-full p-3 rounded-lg border focus:outline-none focus:ring-2 ${
-                errors.contact
-                  ? "border-red-500"
-                  : "border-pink-200 focus:ring-pink-500"
-              }`}
-            />
-            {errors.contact && (
-              <p className="text-sm text-red-500">{errors.contact}</p>
-            )}
-          </div>
-
-          <div className="space-y-2">
-            <label className="block text-pink-700 text-sm font-medium">
-              Pincode *
-            </label>
-            <input
-              type="text"
-              name="pincode"
-              value={formData.pincode}
-              onChange={handleChange}
-              placeholder="Enter Pincode"
-              className={`w-full p-3 rounded-lg border focus:outline-none focus:ring-2 ${
-                errors.pincode
-                  ? "border-red-500"
-                  : "border-pink-200 focus:ring-pink-500"
-              }`}
-            />
-            {errors.pincode && (
-              <p className="text-sm text-red-500">{errors.pincode}</p>
-            )}
-          </div>
-
-          <div className="space-y-2">
-            <label className="block text-pink-700 text-sm font-medium">
-              Event Date & Time *
-            </label>
-            <input
-              type="datetime-local"
-              name="dateTime"
-              value={formData.dateTime}
-              onChange={handleChange}
-              className={`w-full p-3 rounded-lg border focus:outline-none focus:ring-2 ${
-                errors.dateTime
-                  ? "border-red-500"
-                  : "border-pink-200 focus:ring-pink-500"
-              }`}
-            />
-            {errors.dateTime && (
-              <p className="text-sm text-red-500">{errors.dateTime}</p>
-            )}
-          </div>
-
-          <button
-            type="submit"
-            className="w-full p-3 rounded-lg bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-medium transition-colors duration-200"
-          >
-            Submit Form
-          </button>
-        </form>
-
-        {submitted && (
-          <div className="mt-4 p-4 rounded-lg bg-green-50 text-green-700 border border-green-200">
-            Form submitted successfully! We'll contact you soon.
-          </div>
-        )}
+              Submit Form
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
 };
 
-export default FormComponent;
+export default Form;

@@ -20,7 +20,7 @@ const OurServicesCards = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="rounded-lg shadow-lg overflow-hidden group relative cursor-pointer transform transition-all duration-300 hover:scale-105"
+            className="rounded shadow-lg overflow-hidden group relative cursor-pointer transform transition-all duration-300 hover:scale-105"
           >
             {/* Image Section */}
             <div className="relative h-60">
@@ -38,7 +38,7 @@ const OurServicesCards = () => {
             </div>
 
             {/* Content Section */}
-            <div className="p-4 flex flex-col items-center justify-center bg-white">
+            <div className="p-2 flex flex-col items-center justify-center bg-[var(--glsr-red)] opacity">
               <h3 className="text-lg font-semibold text-gray-800 text-center transform group-hover:translate-y-0 transition-transform duration-300">
                 {service.name}
               </h3>

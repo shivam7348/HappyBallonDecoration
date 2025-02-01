@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import Marquee from "react-fast-marquee";
+
 
 const Header = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -18,11 +20,17 @@ const Header = () => {
   return (
     <header className="bg-[var(--glsr-red)] text-white p-2">
       <div className="flex flex-col md:flex-row items-center justify-between md:justify-end space-y-2 md:space-y-0 md:space-x-4 md:mr-10">
+             <span>
+             <Marquee className="  p-2 text-md">
+            Welcome to Happy Ballon Decoration!
+          </Marquee>
+             </span>
         {/* Date and Time */}
         <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4">
           <span className="text-sm md:text-base">{formattedDate}</span>
           <span className="text-sm md:text-base">{formattedTime}</span>
         </div>
+
 
         {/* Company Address */}
         <div className="flex items-center">
@@ -36,7 +44,6 @@ const Header = () => {
           <FaInstagram className="h-6 w-6 cursor-pointer text-pink-300 hover:text-pink-400" />
           <FaWhatsapp className="h-6 w-6 cursor-pointer text-green-300 hover:text-green-400" />
           <FaFacebook className="h-6 w-6 cursor-pointer text-blue-500 hover:text-blue-400" />
-          {/* <FaYoutube className="h-6 w-6 cursor-pointer text-red-600 hover:text-red-400" /> */}
         </div>
       </div>
     </header>

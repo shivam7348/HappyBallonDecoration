@@ -1,12 +1,11 @@
-import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 import Layout from "./Layout";
 import Home from './src/Pages/Home'
 import About from './src/Pages/About'
 import Services from './src/Pages/Services'
-import Gallery from "./src/Pages/Gallery";
 import Contact from "./src/Pages/Contact";
+import GalleryData from "./src/Pages/GalleryData";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "gallery",
-        element: <Gallery />,
+        element: <GalleryData />,
       },
     ],
   },

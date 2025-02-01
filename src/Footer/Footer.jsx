@@ -37,7 +37,7 @@ const Footer = () => {
       {/* Branch Details */}
       <div className="container mx-auto py-6 px-4 text-center md:text-left grid md:grid-cols-3 gap-6">
         <div>
-          <h3 className="font-bold text-lg">Choudhary Decorators NCR</h3>
+          <h3 className="font-bold text-lg">Happy Ballon Decorations</h3>
           <p>Shop 11, PALIKA KENDRA, Connaught Place, New Delhi 110001</p>
           <p>Contact: 09650291995 / 08287670046</p>
           <p>Email: info@choudharydecoratorsncr.com</p>
@@ -57,20 +57,28 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-black text-white flex justify-between px-4 py-2 fixed bottom-0 w-full">
-        <span className="text-sm">Choudhary Decorators NCR</span>
-        <div className="flex space-x-4">
+      <div className=" text-white flex justify-between items-center px-4 py-2 fixed bottom-0 w-full">
+        {/* Phone Call Button on the Left Side */}
+        <div>
           <a
             href="tel:09650291995"
-            className="bg-green-500 p-3 rounded-full text-white text-xl"
+            className="bg-green-500 w-16 h-16 rounded-full text-white text-xl flex items-center justify-center"
           >
             <FaPhoneAlt />
           </a>
+        </div>
+
+
+        {/* Company Name in the Center (Optional) */}
+        <span className="text-sm">Choudhary Decorators NCR</span>
+
+        {/* WhatsApp and Arrow-Up Buttons on the Right Side */}
+        <div className="flex space-x-4">
           <a
             href="https://wa.me/09650291995"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-500 p-3 rounded-full text-white text-xl"
+            className="bg-green-500 p-3 rounded-full text-white text-xl flex items-center justify-center"
           >
             <FaWhatsapp />
           </a>
