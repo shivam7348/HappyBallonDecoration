@@ -8,16 +8,24 @@ const serviceAreaPairs = [
   { names: ["Raj Nagar Extension & Shastri Nagar"], description: "Professional balloon decoration services available in Raj Nagar Extension and Shastri Nagar." },
 ];
 
-
 const OurServicesCards = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-12">
       {/* Heading */}
-      <div className="text-center mb-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-22">
+      <div className="text-center mb-12">
+        <h3 className="text-4xl font-bold text-red-500 mb-4">
+          Welcome to Our Happy Balloon Decoration Services in Ghaziabad
+        </h3>
+        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+          Transform your events with our stunning balloon decorations. Whether it’s a birthday, wedding, or corporate event, we provide custom designs that leave a lasting impression.
+        </p>
+      </div>
+
+      {/* Service Area Cards */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         {serviceAreaPairs.map((pair, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h2 className="text-2xl font-semibold text-red-400 mb-2">
+          <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
+            <h2 className="text-2xl font-semibold text-red-500 mb-2">
               {pair.names.join(" & ")}
             </h2>
             <p className="text-gray-600">{pair.description}</p>
@@ -25,55 +33,34 @@ const OurServicesCards = () => {
         ))}
       </div>
 
-  <h3 className="text-4xl font-bold text-red-400 mb-4 mx-">
-    Welcome to Our  Happy  Balloon Decoration Services in Ghaziabad
-  </h3>
-  <p className="text-lg text-gray-700 mx-auto max-w-3xl">
-    Transform your events with our stunning balloon decorations. Whether it’s a birthday, wedding, or corporate event, we provide custom designs that leave a lasting impression. Located in Ghaziabad, we cater to all your celebration needs.
-  </p>
-</div>
-
-{/* <div className="text-center mb-16">
-  <h3 className="text-3xl font-bold text-green-400 mb-4">
-    Providing Excellent Happy  Balloon Decoration Services for Every Event
-  </h3>
-  <p className="text-lg text-gray-700 mx-auto max-w-3xl">
-    Our team specializes in creating beautiful, personalized balloon decor that will make your event unforgettable. From elegant wedding setups to fun birthday themes, we ensure that your event is decorated to perfection with creativity and style.
-  </p>
-</div>
-
-      <div>
-
-      </div> */}
-
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-4 sm:mx-6 md:mx-12 lg:mx-20">
+      {/* Services Cards */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {services.map((service) => (
           <div
             key={service.id}
-            className="rounded shadow-lg overflow-hidden group relative cursor-pointer transform transition-all duration-300 hover:scale-105"
+            className="rounded-lg shadow-lg overflow-hidden group relative cursor-pointer transform transition-all duration-300 hover:scale-105"
           >
             {/* Image Section */}
-            <div className="relative h-60">
+            <div className="relative h-56">
               <img
                 src={service.image}
                 alt={service.name}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
               {/* Overlay */}
-              <div className="absolute inset bg-black bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <h3 className="text-lg font-semibold text-white text-center">
-                  {/* {service.name} */}
-                </h3>
+              <div className="absolute inset-0  bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                {/* <h3 className="text-lg font-semibold text-white text-center">
+                  {service.name}
+                </h3> */}
               </div>
             </div>
 
             {/* Content Section */}
-            <div className="p-2 flex flex-col items-center justify-center bg-[var(--glsr-red)] opacity">
-              <h3 className="text-lg font-semibold text-white text-center transform group-hover:translate-y-0 transition-transform duration-300">
+            <div className="p-3 flex flex-col items-center justify-center bg-red-500 text-white">
+              <h3 className="text-lg font-semibold text-center">
                 {service.name}
               </h3>
-              <p className="text-sm text-gray-600 text-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="text-sm text-center mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {service.description}
               </p>
             </div>
