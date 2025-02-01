@@ -26,7 +26,7 @@ const Gallery = ({ images }) => {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
               {/* Overlay */}
-              <div className="absolute inset bg-black bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <div className="absolute inset  bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                 <h3 className="text-lg font-semibold text-white text-center">
                   {/* {image.title} */}
                 </h3>
@@ -34,13 +34,13 @@ const Gallery = ({ images }) => {
             </div>
 
             {/* Content Section */}
-            <div className="p-4 flex flex-col items-center justify-center bg-white">
+            <div className="p-2 flex flex-col items-center justify-center bg-[var(--glsr-red)] opacity">
               <h3 className="text-lg font-semibold text-gray-800 text-center transform group-hover:translate-y-0 transition-transform duration-300">
                 {image.title}
               </h3>
-              <p className="text-sm text-gray-600 text-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <p className="text-sm text-gray-600 text-center mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {image.description}
-              </p>
+              </p> */}
             </div>
           </div>
         ))}

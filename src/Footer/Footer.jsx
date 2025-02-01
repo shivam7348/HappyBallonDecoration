@@ -71,35 +71,38 @@ const Footer = () => {
   {/* Company Name in the Center */}
   <span className="text-sm text-center flex-grow">Happy Birthday Decoration</span>
 
-  {/* WhatsApp and Arrow-Up Buttons on the Right Side */}
-  <div className="flex space-x-4">
-   <div>
-   <a
+  <div>
+  {/* WhatsApp & Phone Buttons - Positioned Slightly Above the Up Button */}
+  <div className="fixed bottom-16 right-4 space-y-4">
+    <a
       href="https://wa.me/09717559655"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-green-500 p-3    rounded-full text-white text-xl flex items-center justify-center"
+      className="bg-green-500 p-3 rounded-full text-white text-xl flex items-center justify-center shadow-lg"
     >
       <FaWhatsapp />
     </a>
-   </div>
-   <div>
-   <a
+    
+    <a
       href="tel:09717559655"
-      className="bg-blue-500 p-3 w-13 h-13  rounded-full text-white text-xl flex items-center justify-center"
+      className="bg-blue-500 p-3 rounded-full text-white text-xl flex items-center justify-center shadow-lg"
     >
       <FaPhoneAlt />
     </a>
-   </div>
-   <div>
-   <a
+  </div>
+
+  {/* Up Button - Stays at the Bottom-Right */}
+  <div className="fixed bottom-4 right-4">
+    <a
       href="#"
-      className="bg-red-500 p-3 rounded-full text-white text-xl flex items-center justify-center"
+      className="bg-red-500 p-3 rounded-full text-white text-xl flex items-center justify-center shadow-lg"
     >
       <FaArrowUp />
     </a>
-   </div>
   </div>
+</div>
+
+
 </div>
 
     </footer>
