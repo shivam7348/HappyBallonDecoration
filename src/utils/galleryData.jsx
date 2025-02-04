@@ -9,10 +9,8 @@ import birthday6 from '../assets/birthdayImage/birthday6.jpg'
 import birthday7 from '../assets/birthdayImage/birthday7.jpg'
 import birthday8 from '../assets/birthdayImage/birthday8.jpg'
 import birthday9 from '../assets/birthdayImage/birthday9.jpg'
-import birthday10 from '../assets/birthdayImage/birthday10.jpg'
 import birthday11 from '../assets/birthdayImage/birthday11.jpg'
 import birthday12 from '../assets/birthdayImage/birthday12.jpg'
-import birthday13 from '../assets/birthdayImage/birthday13.jpg'
 import birthday14 from '../assets/birthdayImage/birthday14.jpg'
 import birthday15 from '../assets/birthdayImage/birthday15.jpg'
 import birthday16 from '../assets/birthdayImage/birthday16.jpg'
@@ -96,12 +94,7 @@ export const images = [
         title: 'Image 2 Title',
         description: 'This is a description for Image 2.',
     },
-    {
-        src: birthday10,
-        alt: 'Image 6',
-        title: 'Image 2 Title',
-        description: 'This is a description for Image 2.',
-    },
+
     {
         src: birthday11,
         alt: 'Image 6',
@@ -115,12 +108,7 @@ export const images = [
         title: 'Image 2 Title',
         description: 'This is a description for Image 2.',
     },
-    {
-        src: birthday13,
-        alt: 'Image 6',
-        title: 'Image 2 Title',
-        description: 'This is a description for Image 2.',
-    },
+  
     {
         src: birthday14,
         alt: 'Image 6',

@@ -9,17 +9,9 @@ import birthday6 from '../assets/birthdayImage/birthday6.jpg'
 import birthday7 from '../assets/birthdayImage/birthday7.jpg'
 import birthday8 from '../assets/birthdayImage/birthday8.jpg'
 import birthday9 from '../assets/birthdayImage/birthday9.jpg'
-import birthday10 from '../assets/birthdayImage/birthday10.jpg'
 import birthday11 from '../assets/birthdayImage/birthday11.jpg'
 import birthday12 from '../assets/birthdayImage/birthday12.jpg'
-import birthday13 from '../assets/birthdayImage/birthday13.jpg'
 import birthday14 from '../assets/birthdayImage/birthday14.jpg'
-import birthday15 from '../assets/birthdayImage/birthday15.jpg'
-import birthday16 from '../assets/birthdayImage/birthday16.jpg'
-import birthday17 from '../assets/birthdayImage/birthday17.jpg'
-import happyanniversery2 from '../assets/birthdayImage/happyanniversery2.jpg'
-import Marquee from 'react-fast-marquee';
-
 
 
 const services = [
@@ -78,12 +70,7 @@ const services = [
     image:
     birthday9,
    },
-   {
-    id: 10,
-    name: "Birthday Decorations",
-    image:
-    birthday10,
-   },
+  
    {
     id: 11,
     name: "Birthday Decorations",
@@ -96,12 +83,7 @@ const services = [
     image:
     birthday12,
    },
-   {
-    id: 13,
-    name: "Birthday Decorations",
-    image:
-    birthday13,
-   },
+  
    {
     id: 14,
     name: "Birthday Decorations",
