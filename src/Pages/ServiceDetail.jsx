@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import { services } from '../utils/MockData'
 import { Link } from 'react-router-dom'
 
 function ServiceDetail() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when component mounts
+      }, []);
   return (
     <div>
      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

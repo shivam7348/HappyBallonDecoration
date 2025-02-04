@@ -8,7 +8,7 @@ function Home() {
     <>
       <AutoSlider />
       <ServiceCards />
-      <BalloonDecoration />
+      {/* <BalloonDecoration /> */}
       <OurServicesCards />
       <Form />
     </>

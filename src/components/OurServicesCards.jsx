@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { services } from "../utils/MockData";
+import { useEffect } from "react";
 
 const serviceAreaPairs = [
   { names: ["RDC & Kavi Nagar"], description: "We provide balloon decoration services in RDC and Kavi Nagar for all occasions." },
@@ -9,6 +10,9 @@ const serviceAreaPairs = [
 ];
 
 const OurServicesCards = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when component mounts
+  }, []);
   return (
     
 <div className="container mx-auto px-4 py-12">
