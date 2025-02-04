@@ -8,9 +8,9 @@ const BalloonDecoration = () => {
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto my-8">
-      <h1 className="text-4xl font-bold text-center text-red-400 mb-6">
-        Happy Balloon Decoration Services Area in Ghaziabad
-      </h1>
+        <h1 className="text-4xl font-bold text-center text-red-400 mb-6">
+          Happy Balloon Decoration Services Area in Ghaziabad
+        </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {serviceAreaPairs.map((pair, index) => (

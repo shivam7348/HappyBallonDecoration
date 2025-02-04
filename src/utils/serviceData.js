@@ -1,5 +1,9 @@
 
 import birthday1 from '../assets/birthdayImage/birthday1.jpg'
+import haldi from '../assets/birthdayImage/haldi.jpg'
+import bridetobe from '../assets/birthdayImage/bridetobe.jpg'
+import happanniversery4 from '../assets/birthdayImage/happanniversery4.jpg'
+
 
 export const servicescards = [
     {
@@ -10,20 +14,20 @@ export const servicescards = [
     },
     {
       id: 2,
-      name: "Wedding Decoration",
+      name: "Haldi Decoration",
       image:
-        "https://d397bfy4gvgcdm.cloudfront.net/270602-S-L-New-Jersey-Wedding-1018-1.jpeg",
+      haldi,
     },
     {
       id: 3,
-      name: "Baby Shower",
-      image: "https://thejarvi.com/wp-content/uploads/2023/01/WEL0002-2.jpg",
+      name: "Bride To be",
+      image: bridetobe,
     },
     {
       id: 4,
-      name: "Corporate Events",
+      name: "Happy Anniversery",
       image:
-        "https://www.hire4event.com/blogs/wp-content/uploads/2023/06/Top-event-venues-in-Delhi-Noida-Gurgaon.jpg",
+      happanniversery4,
     },
     {
       id: 5,

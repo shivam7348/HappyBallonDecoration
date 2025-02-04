@@ -2,24 +2,46 @@
 import birthday1 from "../assets/birthdayImage/birthday1.jpg"
 import birthday2 from "../assets/birthdayImage/birthday2.jpg"
 import birthday3 from "../assets/birthdayImage/birthday3.jpg"
+import haldi2 from "../assets/birthdayImage/haldi2.jpg"
+import babyshower from "../assets/birthdayImage/babyshower.jpg"
+import ringceremony from "../assets/birthdayImage/ringceremony.jpg"
+
+
 // import birthday4 from "../assets/birthdayImage/birthday4.jpg"
 // import birthday5 from "../assets/birthdayImage/birthday5.jpg"
 // import birthday6 from "../assets/birthdayImage/birthday6.jpg"
 
- export const services = [
-   {
-     id: 1,
-     name: "Birthday Decorations",
-     image:
-       birthday1,
-   },
+export const services = [
+  {
+    id: 1,
+    name: "Birthday Decorations",
+    image:
+    birthday1,
+  },
+  {
+    id: 20,
+    name: "Baby Shower Decoration",
+    image:
+    babyshower,
+  },
+  {
+    id: 40,
+    name: "Haldi Decoration ",
+    image: haldi2,
+  },
  
    {
      id: 2,
-     name: "Naming Ceremony",
+     name: "Birthday Decorations",
      image:
      birthday2,
    },
+   {
+    id: 47,
+    name: "Ring Ceremony ",
+    image:
+    ringceremony,
+  },
    {
      id: 3,
      name: "Naming Decoration",
@@ -118,12 +140,6 @@ import birthday3 from "../assets/birthdayImage/birthday3.jpg"
      name: "Baby Shower ",
      image:
        "https://choudharydecoratorsncr.com/wp-content/uploads/2024/02/3.jpg",
-   },
-   {
-     id: 20,
-     name: "Baby Shower Decoration",
-     image:
-       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXHMuE_QJfLhrcIZEJxoDWsVhAsS39IEltg&s",
    },
    {
      id: 21,
@@ -237,11 +253,6 @@ import birthday3 from "../assets/birthdayImage/birthday3.jpg"
        "https://www.springboardsupplies.co.uk/cdn/shop/articles/pexels-yan-krukov-8612990_800x.jpg?v=1627557564",
    },
    {
-     id: 40,
-     name: "Haldi Decoration ",
-     image: "https://m.media-amazon.com/images/I/71NF1AVPPgL.jpg",
-   },
-   {
      id: 41,
      name: "Home Decoration ",
      image:
@@ -276,12 +287,7 @@ import birthday3 from "../assets/birthdayImage/birthday3.jpg"
      image:
        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyORJ6_lJ4_Kn2FkLoFwU4CWSXc_-KNrxXGw&s",
    },
-   {
-     id: 47,
-     name: "Matka Smoke Fog ",
-     image:
-       "https://m.media-amazon.com/images/I/51878Nf0PjL._AC_UF1000,1000_QL80_.jpg",
-   },
+  
    {
      id: 48,
      name: "Mehandi decoration ",
