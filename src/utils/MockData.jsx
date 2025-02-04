@@ -1,22 +1,30 @@
 
+import birthday1 from "../assets/birthdayImage/birthday1.jpg"
+import birthday2 from "../assets/birthdayImage/birthday2.jpg"
+import birthday3 from "../assets/birthdayImage/birthday3.jpg"
+// import birthday4 from "../assets/birthdayImage/birthday4.jpg"
+// import birthday5 from "../assets/birthdayImage/birthday5.jpg"
+// import birthday6 from "../assets/birthdayImage/birthday6.jpg"
+
  export const services = [
    {
      id: 1,
-     name: "Mom To Be",
+     name: "Birthday Decorations",
      image:
-       "https://m.media-amazon.com/images/I/61jWF1V1s7L._AC_UF1000,1000_QL80_.jpg",
+       birthday1,
    },
+ 
    {
      id: 2,
      name: "Naming Ceremony",
      image:
-       "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/81Pnx8djXlL-2048x2048.jpg",
+     birthday2,
    },
    {
      id: 3,
      name: "Naming Decoration",
      image:
-       "https://balloonpro.in/wp-content/uploads/2021/03/20210306_090934.webp",
+     birthday3,
    },
    {
      id: 4,
@@ -144,7 +152,7 @@
      id: 25,
      name: "Birthday Decoration",
      image:
-       "https://m.media-amazon.com/images/I/71HnPV2jT8L._AC_UF1000,1000_QL80_.jpg",
+       birthday1,
    },
    {
      id: 26,
@@ -282,40 +290,3 @@
    },
  ];
 
-export const servicescards = [
-  {
-    id: 1,
-    name: "Birthday Decoration",
-    image:
-      "https://www.funcorp.in/cdn/shop/products/partycorp_happy_birthday_decoration_kit_combo_70_pcs_1__1.jpg?v=1675938604",
-  },
-  {
-    id: 2,
-    name: "Wedding Decoration",
-    image:
-      "https://d397bfy4gvgcdm.cloudfront.net/270602-S-L-New-Jersey-Wedding-1018-1.jpeg",
-  },
-  {
-    id: 3,
-    name: "Baby Shower",
-    image: "https://thejarvi.com/wp-content/uploads/2023/01/WEL0002-2.jpg",
-  },
-  {
-    id: 4,
-    name: "Corporate Events",
-    image:
-      "https://www.hire4event.com/blogs/wp-content/uploads/2023/06/Top-event-venues-in-Delhi-Noida-Gurgaon.jpg",
-  },
-  {
-    id: 5,
-    name: "Anniversary Decoration",
-    image:
-      "https://storage.googleapis.com/shy-pub/337348/1704132265028_SKU-0817_3.jpg",
-  },
-  {
-    id: 6,
-    name: "Theme Party",
-    image:
-      "https://cdn.webshopapp.com/shops/59317/files/433087475/2000x1500x1/image.jpg",
-  },
-];

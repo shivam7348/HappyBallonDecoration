@@ -20,7 +20,6 @@ const OurServicesCards = () => {
         </p>
       </div>
 
-      {/* Service Area Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         {serviceAreaPairs.map((pair, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
@@ -32,29 +31,22 @@ const OurServicesCards = () => {
         ))}
       </div>
 
-      {/* Services Cards */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {services.map((service) => (
           <div
             key={service.id}
             className="rounded-lg shadow-lg overflow-hidden group relative cursor-pointer transform transition-all duration-300 hover:scale-105"
           >
-            {/* Image Section */}
             <div className="relative h-56">
               <img
                 src={service.image}
                 alt={service.name}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
-              {/* Overlay */}
               <div className="absolute inset-0  bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                {/* <h3 className="text-lg font-semibold text-white text-center">
-                  {service.name}
-                </h3> */}
               </div>
             </div>
 
-            {/* Content Section */}
             <div className="p-3 flex flex-col items-center justify-center bg-[var(--glsr-red)] text-white">
               <h3 className="text-lg font-semibold text-center">
                 {service.name}

@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
-import { servicescards } from "../utils/MockData";
-
+import { servicescards } from "../utils/serviceData";
 const ServiceCards = () => {
   return (
     <div className="container mx-auto px-4 py-8">
