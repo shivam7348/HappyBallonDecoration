@@ -6,6 +6,7 @@ import About from './src/Pages/About'
 import Services from './src/Pages/Services'
 import Contact from "./src/Pages/Contact";
 import GalleryData from "./src/Pages/GalleryData";
+import ServiceDetail from "./src/Pages/ServiceDetail";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,17 @@ const router = createBrowserRouter([
         path: "gallery",
         element: <GalleryData />,
       },
+      // service router 
+{
+  path:"/service/1",
+   element:<ServiceDetail />,
+},
+// {
+//   path:"/service/2",
+//    element:< />,
+
+// }
+
     ],
   },
 ]);
