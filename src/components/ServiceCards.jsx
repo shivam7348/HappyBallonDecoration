@@ -1,4 +1,4 @@
-import welcomebaby from '../assets/birthdayImage/welcomebaby.mp4'
+import welcomebaby2 from '../assets/birthdayImage/welcomebaby2.mp4'
 import { motion } from "framer-motion"; // Import Framer Motion
 import { servicescards } from "../utils/serviceData";
 const ServiceCards = () => {
@@ -54,7 +54,7 @@ const ServiceCards = () => {
                      className="h-full max-h-[500px] rounded-lg shadow-lg"
                      style={{ width: 'auto', height: '100%' }}
                    >
-                     <source src={welcomebaby} type="video/mp4" />
+                     <source src={welcomebaby2} type="video/mp4" />
                      Your browser does not support the video tag.
                    </video>
         </motion.div>

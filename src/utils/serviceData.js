@@ -1,6 +1,6 @@
 
 import birthday1 from '../assets/birthdayImage/birthday1.jpg'
-import haldi from '../assets/birthdayImage/haldi.jpg'
+import mehandi from '../assets/birthdayImage/mehandi.jpg'
 import bridetobe from '../assets/birthdayImage/bridetobe.jpg'
 import happanniversery4 from '../assets/birthdayImage/happanniversery4.jpg'
 import happyanniversery from '../assets/birthdayImage/happyanniversery.jpg'
@@ -18,7 +18,7 @@ export const servicescards = [
       id: 2,
       name: "Haldi Decoration",
       image:
-      haldi,
+      mehandi,
     },
     {
       id: 3,

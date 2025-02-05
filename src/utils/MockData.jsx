@@ -12,9 +12,12 @@ import PinkDecoration from "../assets/birthdayImage/PinkDecoration.jpg"
 import loveDecoration from "../assets/birthdayImage/loveDecoration.jpg"
 
 import haldi2 from "../assets/birthdayImage/haldi2.jpg"
+import mehandi from "../assets/birthdayImage/mehandi.jpg"
 import babyshower from "../assets/birthdayImage/babyshower.jpg"
 import ringceremony from "../assets/birthdayImage/ringceremony.jpg"
-import happyanniversery2 from "../assets/birthdayImage/happyanniversery2.jpg"
+import GoldenParty from "../assets/birthdayImage/GoldenParty.jpg"
+import willyoumaryme from "../assets/birthdayImage/willyoumaryme.jpg"
+import annverseryfifty from "../assets/birthdayImage/annverseryfifty.jpg"
 
 
 // import birthday4 from "../assets/birthdayImage/birthday4.jpg"
@@ -82,6 +85,13 @@ export const services = [
     image:
       silverjublee,
   },
+  {
+    id: 8,
+    name: "will you Marry Me",
+    image:
+    willyoumaryme,
+
+  },
  
   {
     id: 9,
@@ -114,19 +124,19 @@ export const services = [
   },
   {
     id: 14,
-    name: "Welcome Baby girl",
-    image: "https://m.media-amazon.com/images/I/81hREWqvTBL.jpg",
+    name: "GoldenParty",
+    image: GoldenParty,
   },
   {
     id: 15,
     name: "Will You Marry Me",
-    image: "https://m.media-amazon.com/images/I/71TzojE5MwL.jpg",
+    image: annverseryfifty,
   },
   {
     id: 16,
-    name: "Themem Party Planning",
+    name: "Mehandi ",
     image:
-      "https://www.mgnevents.co.uk/wp-content/uploads/2017/08/18th-Vegas-Birthday-Party-Surrey-004.jpg",
+    mehandi,
   },
   {
     id: 17,

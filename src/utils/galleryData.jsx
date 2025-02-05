@@ -2,7 +2,7 @@ import bettertogether from '../assets/birthdayImage/bettertogether.jpg'
 import birthday1 from '../assets/birthdayImage/birthday1.jpg'
 import birthday2 from '../assets/birthdayImage/birthday2.jpg'
 import birthday3 from '../assets/birthdayImage/birthday3.jpg'
-import haldi from '../assets/birthdayImage/haldi.jpg'
+import mehandi from '../assets/birthdayImage/mehandi.jpg'
 import birthday4 from '../assets/birthdayImage/birthday4.jpg'
 import birthday5 from '../assets/birthdayImage/birthday5.jpg'
 import birthday6 from '../assets/birthdayImage/birthday6.jpg'
@@ -47,7 +47,7 @@ export const images = [
         description: 'Party Decoration.',
     },
     {
-        src: haldi,
+        src: mehandi,
         alt: 'Image 3',
         title: 'Haldi Decoration',
         description: 'This is a description for Image 2.',
