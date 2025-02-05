@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
+import image4 from "../assets/CuteShower.svg";
 import image1 from "../assets/party.png";
 import image2 from "../assets/weeding.svg";
 import image3 from "../assets/birthday.png";
-import image4 from "../assets/Cute  Shower.png";
 
 
 const AutoSlider = () => {
   const slides = [
     { url: image3, title: "Birthday Celebrations" },
+    { url: image4, title: "Corporate Events" },
     { url: image1, title: "2025 Events" },
     { url: image2, title: "Wedding Services" },
-    { url: image4, title: "Corporate Events" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
