@@ -8,8 +8,8 @@ import image3 from "../assets/birthday.png";
 const AutoSlider = () => {
   const slides = [
     { url: image3, title: "Birthday Celebrations" },
-    { url: image4, title: "Corporate Events" },
-    { url: image1, title: "2025 Events" },
+    { url: image4, title: "Cute Shower" },
+    { url: image1, title: "Party Decorations" },
     { url: image2, title: "Wedding Services" },
   ];
 
