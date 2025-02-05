@@ -8,7 +8,7 @@ import birthday5 from '../assets/birthdayImage/birthday5.jpg'
 import birthday6 from '../assets/birthdayImage/birthday6.jpg'
 import birthday7 from '../assets/birthdayImage/birthday7.jpg'
 import birthday8 from '../assets/birthdayImage/birthday8.jpg'
-import birthday9 from '../assets/birthdayImage/birthday9.jpg'
+// import birthday9 from '../assets/birthdayImage/birthday9.jpg'
 import birthday11 from '../assets/birthdayImage/birthday11.jpg'
 import birthday12 from '../assets/birthdayImage/birthday12.jpg'
 import birthday14 from '../assets/birthdayImage/birthday14.jpg'
@@ -64,12 +64,7 @@ const services = [
         image:
             birthday8,
     },
-    {
-        id: 9,
-        name: "Birthday Decorations",
-        image:
-            birthday9,
-    },
+    
 
     {
         id: 11,
