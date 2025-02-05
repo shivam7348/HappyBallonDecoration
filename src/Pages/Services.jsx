@@ -1,10 +1,9 @@
-import React from 'react'
 import OurServicesCards from '../components/OurServicesCards';
 
 function Services() {
   return (
     <div>
-      <OurServicesCards />
+    <OurServicesCards />
     </div>
   );
 }

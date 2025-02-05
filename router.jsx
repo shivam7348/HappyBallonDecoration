@@ -34,15 +34,15 @@ const router = createBrowserRouter([
         element: <GalleryData />,
       },
       // service router 
-{
-  path:"/service/1",
-   element:<ServiceDetail />,
-},
-// {
-//   path:"/service/2",
-//    element:< />,
+      {
+        path: "/service/1",
+        element: <ServiceDetail />,
+      },
+      {
+        path: "/service/2",
+        element: <ServiceDetail />,
+      },
 
-// }
 
     ],
   },

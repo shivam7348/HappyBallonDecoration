@@ -1,4 +1,8 @@
-import  { useState } from 'react';
+
+
+import babyShower from '../assets/birthdayImage/baby.mp4'
+import { useState } from 'react';
+
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -18,9 +22,7 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form Data Submitted:', formData);
-    // You can send the data to your backend or display a success message
   };
 
   return (
@@ -28,8 +30,7 @@ const Form = () => {
       <div className="max-w-4xl w-full bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Left Side Content */}
         <div className="w-full md:w-1/2 bg-gray-100 text-black p-8 flex flex-col justify-center opacity-80 shadow-lg mb-6 md:mb-0">
-          <h2 className="text-3xl font-bold mb-4">Save Time  <span className="">Book Now!</span>
-          </h2>
+          <h2 className="text-3xl font-bold mb-4">Save Time  <span className="">Book Now!</span></h2>
           <p className="text-lg mb-4">
             Get Callback From Our Event Advisor
           </p>
@@ -96,6 +97,20 @@ const Form = () => {
               Submit Form
             </button>
           </form>
+        </div>
+
+        {/* Video Container */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-4 mx-auto">
+          <video
+            controls
+            autoPlay  // Add this
+            muted     // Add this
+            className="h-full max-h-[500px] rounded-lg shadow-lg"
+            style={{ width: 'auto', height: '100%' }}
+          >
+            <source src={babyShower} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
