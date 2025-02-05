@@ -61,9 +61,7 @@ const OurServicesCards = () => {
           <h3 className="text-lg font-semibold text-center">
             {service.name}
           </h3>
-          <p className="text-sm text-center mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            {service.description}
-          </p>
+         
         </div>
       </Link>
     ))}

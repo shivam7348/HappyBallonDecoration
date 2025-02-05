@@ -8,6 +8,7 @@ import birthday11 from "../assets/birthdayImage/birthday11.jpg"
 import bettertogether from "../assets/birthdayImage/bettertogether.jpg"
 import welcomebaby from "../assets/birthdayImage/welcomebaby.jpg"
 import silverjublee from "../assets/birthdayImage/silverjublee.jpg"
+import PinkDecoration from "../assets/birthdayImage/PinkDecoration.jpg"
 import loveDecoration from "../assets/birthdayImage/loveDecoration.jpg"
 
 import haldi2 from "../assets/birthdayImage/haldi2.jpg"
@@ -95,15 +96,15 @@ export const services = [
   },
   {
     id: 11,
-    name: "Wedding Home decoration",
+    name: "Kitty Decoration",
     image:
       birthday11,
   },
   {
     id: 12,
-    name: "Welcome Baby ",
+    name: "Pink Decoration ",
     image:
-      "https://choudharydecoratorsncr.com/wp-content/uploads/2023/11/choudhaory-105.jpeg",
+    PinkDecoration,
   },
   {
     id: 13,

@@ -90,7 +90,7 @@ const services = [
 function ServiceDetail() {
 
     useEffect(() => {
-        window.scrollTo(0, 0); // Scroll to the top when component mounts
+        window.scrollTo(0, 0); 
     }, []);
     return (
         <div className='container mx-auto px-4 py-12 '>

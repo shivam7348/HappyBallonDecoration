@@ -8,7 +8,6 @@ import birthday5 from '../assets/birthdayImage/birthday5.jpg'
 import birthday6 from '../assets/birthdayImage/birthday6.jpg'
 import birthday7 from '../assets/birthdayImage/birthday7.jpg'
 import birthday8 from '../assets/birthdayImage/birthday8.jpg'
-import welcomebaby from '../assets/birthdayImage/welcomebaby.jpg'
 import birthday11 from '../assets/birthdayImage/birthday11.jpg'
 import birthday12 from '../assets/birthdayImage/birthday12.jpg'
 import birthday14 from '../assets/birthdayImage/birthday14.jpg'
@@ -17,7 +16,21 @@ import birthday16 from '../assets/birthdayImage/birthday16.jpg'
 import birthday17 from '../assets/birthdayImage/birthday17.jpg'
 import happyanniversery2 from '../assets/birthdayImage/happyanniversery2.jpg'
 import happyanniversery3 from '../assets/birthdayImage/happyanniversery3.jpg'
+import PinkDecoration from '../assets/birthdayImage/PinkDecoration.jpg'
+import yello from '../assets/birthdayImage/yello.jpg'
+import welcomebaby from '../assets/birthdayImage/welcomebaby.mp4'
 
+export const rightVideoSrc = [
+    
+        {
+            src: welcomebaby,
+            alt: 'Image 1',
+            title: 'Better together ',
+            description: 'Wedding Decoration',
+        },
+    
+
+]
 
 
 export const images = [
@@ -83,12 +96,7 @@ export const images = [
         title: 'Image 2 Title',
         description: 'This is a description for Image 2.',
     },
-    {
-        src: welcomebaby,
-        alt: 'Image 6',
-        title: 'Image 2 Title',
-        description: 'This is a description for Image 2.',
-    },
+   
     {
         src: happyanniversery2,
         alt: 'Image 6',
@@ -140,6 +148,28 @@ export const images = [
         title: 'Golden Happy Anniversery',
         description: 'This is a description for Image 2.',
     },
+    {
+        src: PinkDecoration,
+        alt: 'Image 6',
+        title: 'Golden Happy Anniversery',
+        description: 'This is a description for Image 2.',
+
+    },
+    {
+        src: yello,
+        alt: 'Image 6',
+        title: 'Golden Happy Anniversery',
+        description: 'This is a description for Image 2.',
+
+    },
+    {
+        src: yello,
+        alt: 'Image 6',
+        title: 'Golden Happy Anniversery',
+        description: 'This is a description for Image 2.',
+
+
+    }
 
     // Add more images as needed
 ];

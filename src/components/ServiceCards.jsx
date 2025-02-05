@@ -49,7 +49,7 @@ const ServiceCards = () => {
         >
           <video
                      controls
-                     autoPlay  // Add this
+                    autoPlay  // Add this
                      muted     // Add this
                      className="h-full max-h-[500px] rounded-lg shadow-lg"
                      style={{ width: 'auto', height: '100%' }}
