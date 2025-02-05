@@ -38,10 +38,10 @@ const router = createBrowserRouter([
         path: "/service/1",
         element: <ServiceDetail />,
       },
-      {
-        path: "/service/2",
-        element: <ServiceDetail />,
-      },
+      // {
+      //   path: "/service/2",
+      //   element: <ServiceDetail />,
+      // },
 
 
     ],

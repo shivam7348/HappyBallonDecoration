@@ -16,6 +16,7 @@ import birthday15 from '../assets/birthdayImage/birthday15.jpg'
 import birthday16 from '../assets/birthdayImage/birthday16.jpg'
 import birthday17 from '../assets/birthdayImage/birthday17.jpg'
 import happyanniversery2 from '../assets/birthdayImage/happyanniversery2.jpg'
+import happyanniversery3 from '../assets/birthdayImage/happyanniversery3.jpg'
 
 
 
@@ -49,13 +50,13 @@ export const images = [
     {
         src: birthday3,
         alt: 'Image 4',
-        title: 'Image 2 Title',
+        title: 'Party Decoration',
         description: 'This is a description for Image 2.',
     },
     {
         src: birthday4,
         alt: 'Image 5',
-        title: 'Image 2 Title',
+        title: 'Party Decoration',
         description: 'This is a description for Image 2.',
     },
     {
@@ -133,12 +134,12 @@ export const images = [
         title: 'Image 2 Title',
         description: 'This is a description for Image 2.',
     },
-    // {
-    //     src: birthday18,
-    //     alt: 'Image 6',
-    //     title: 'Image 2 Title',
-    //     description: 'This is a description for Image 2.',
-    // },
+    {
+        src: happyanniversery3,
+        alt: 'Image 6',
+        title: 'Golden Happy Anniversery',
+        description: 'This is a description for Image 2.',
+    },
 
     // Add more images as needed
 ];

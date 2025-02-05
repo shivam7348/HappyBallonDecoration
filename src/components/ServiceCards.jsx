@@ -20,7 +20,7 @@ const ServiceCards = () => {
             <div className="relative h-48 flex-shrink-0">
               <img
                 src={service.image}
-                alt={service.name}
+                // alt={service.name}
                 className="w-full h-full object-cover"
               />
             </div>

@@ -100,7 +100,7 @@ const Form = () => {
         </div>
 
         {/* Video Container */}
-        <div className="w-full md:w-1/2 flex items-center justify-center p-4 mx-auto">
+        <div className="w-full md:w-1/2 flex items-center justify-center p-4 ">
           <video
             controls
             autoPlay  // Add this

@@ -3,6 +3,8 @@ import birthday1 from '../assets/birthdayImage/birthday1.jpg'
 import haldi from '../assets/birthdayImage/haldi.jpg'
 import bridetobe from '../assets/birthdayImage/bridetobe.jpg'
 import happanniversery4 from '../assets/birthdayImage/happanniversery4.jpg'
+import happyanniversery from '../assets/birthdayImage/happyanniversery.jpg'
+import loveDecoration from '../assets/birthdayImage/loveDecoration.jpg'
 
 
 export const servicescards = [
@@ -33,12 +35,12 @@ export const servicescards = [
       id: 5,
       name: "Anniversary Decoration",
       image:
-        "https://storage.googleapis.com/shy-pub/337348/1704132265028_SKU-0817_3.jpg",
+      happyanniversery,
     },
     {
       id: 6,
-      name: "Theme Party",
+      name: "Love Decoration",
       image:
-        "https://cdn.webshopapp.com/shops/59317/files/433087475/2000x1500x1/image.jpg",
+      loveDecoration,
     },
   ];

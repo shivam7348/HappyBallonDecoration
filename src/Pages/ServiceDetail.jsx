@@ -113,7 +113,7 @@ function ServiceDetail() {
                 {services.map((service) => (
                     <Link
                         key={service.id}
-                        to={`/service/${service.id}`} // Dynamic route based on service ID
+                       
                         className="rounded-lg shadow-lg overflow-hidden group relative cursor-pointer transform transition-all duration-300 hover:scale-105"
                     >
                         <div className="relative h-56">
