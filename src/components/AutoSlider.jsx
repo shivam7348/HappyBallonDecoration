@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import image4 from "../assets/CuteShower.svg";
+import image4 from "../assets/CuteShower.png";
 import image1 from "../assets/party.png";
-import image2 from "../assets/weeding.svg";
+import image2 from "../assets/weeding.png";
 import image3 from "../assets/birthday.png";
 
 
@@ -56,7 +56,7 @@ const AutoSlider = () => {
     >
       <div className="w-full max-w-11xl">
         <div
-          className="relative h-[250px] sm:h-[400px] md:h-[500px] lg:h-[700px] overflow-hidden rounded-lg shadow-2xl"
+          className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px] overflow-hidden rounded-lg shadow-2xl"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -64,7 +64,7 @@ const AutoSlider = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`absolute inset-0 w-full h-full transition-all duration-700 ease-in-out transform
+              className={`absolute inset-0 w-full h-full object-fit transition-all duration-700 ease-in-out transform
                 ${
                   index === currentIndex
                     ? "opacity-100 translate-x-0 scale-100"
@@ -76,7 +76,7 @@ const AutoSlider = () => {
             >
               <img
                 src={slide.url}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fit "
                 alt={slide.title}
               />
               {/* Caption overlay */}
